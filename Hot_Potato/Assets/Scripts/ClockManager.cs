@@ -16,8 +16,6 @@ public class ClockManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		Debug.Log(Time.time);
-
 		transform.rotation = Quaternion.Euler(0, 0, Time.time * segundosEmGraus);
     }
 }
