@@ -9,14 +9,15 @@ using UnityEditor;
 [CustomEditor(typeof(LightManager))]
 public class LightManagerEditor : Editor
 {    
-    Light[] lights;
+    GameObject[] lights;
     float intensity;
-
+    
 
 
     private void OnEnable()
     {
-        lights = GameObject.FindObjectsOfType<Light>();
+        lights = GameObject.FindGameObjectsWithTag("Lamps");
+        intensity = lights[0].GetComponent<Light>().intensity;
       
     }
 
@@ -25,17 +26,14 @@ public class LightManagerEditor : Editor
 
     public override void OnInspectorGUI()
     {
-        EditorGUILayout.Slider(0f, 0f, 1f);
-        serializedObject.Update();
+        intensity = EditorGUILayout.Slider(intensity, 0f, 1f);
 
+        foreach (var light in lights)
+        {
+            light.GetComponent<Light>().intensity = intensity;
+        }
 
-       
-
-
-
-
-
-        serializedObject.ApplyModifiedProperties();
+      
     }
 
 
