@@ -12,18 +12,24 @@ public class LightManagerEditor : Editor
     Light[] lights;
     float intensity;
 
+
+
     private void OnEnable()
     {
         lights = GameObject.FindObjectsOfType<Light>();
       
     }
 
+
+
+
     public override void OnInspectorGUI()
     {
+        EditorGUILayout.Slider(0f, 0f, 1f);
         serializedObject.Update();
 
 
-        EditorGUILayout.Slider(0f, 0f, 1f);
+       
 
 
 
@@ -31,6 +37,8 @@ public class LightManagerEditor : Editor
 
         serializedObject.ApplyModifiedProperties();
     }
+
+
 }
 #endif
 public class LightManager : MonoBehaviour
