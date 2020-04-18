@@ -29,9 +29,9 @@ public class SliderManager : MonoBehaviour
 		areaCerta.rectTransform.Translate(new Vector3(posAreaCerta, 0, 0));
 	}
 
-    // Update is called once per frame
-    void Update()
-    {
+	// Update is called once per frame
+	void Update()
+	{
 		VaieVolta();
 		if (Input.GetMouseButtonDown(0))
 		{
@@ -44,7 +44,8 @@ public class SliderManager : MonoBehaviour
 				mensagem.text = "ohno";
 			}
 		}
-    }
+
+	}
 
 	void VaieVolta()
 	{
