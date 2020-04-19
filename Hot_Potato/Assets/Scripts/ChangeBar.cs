@@ -11,10 +11,11 @@ public class ChangeBar : MonoBehaviour
     public GameManager game;
     public int obj;
     public Light luz;
+    private float maxIntensity;
     // Start is called before the first frame update
     void Start()
     {
-        
+        maxIntensity = luz.intensity;
     }
 
     // Update is called once per frame
@@ -27,6 +28,7 @@ public class ChangeBar : MonoBehaviour
 
 	void MudaLuzEBarra(int num)
 	{
-		game.intensity[num] = image.fillAmount = luz.intensity -= 0.1f * Time.deltaTime;
+        luz.intensity -= 0.1f * Time.deltaTime;
+        game.intensity[num] = image.fillAmount = luz.intensity/ maxIntensity;
 	}
 }

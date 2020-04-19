@@ -16,7 +16,7 @@ public class MovePotato : MonoBehaviour
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            Debug.Log("fiu");
+           
 
             if(Physics.Raycast(ray,out hit))
             {
