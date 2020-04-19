@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffa626a713c319468cfffcc4b5748b3, type: 3}
   m_Name: GameManager
   m_EditorClassIdentifier: 
-  intensity: []
+  intensity:
+  - -0.0020179
+  - -0.0020179
+  - -0.0020179
+  - -0.0020179
