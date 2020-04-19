@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GameManager")]
 public class GameManager : ScriptableObject
 {
-    public float[] intensity;
+    public float[] intensityLuz;
+	public float[] intensityFogo;
   
 }

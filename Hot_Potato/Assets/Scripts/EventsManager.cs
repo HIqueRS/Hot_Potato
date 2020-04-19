@@ -5,12 +5,18 @@ using UnityEngine;
 public class EventsManager : MonoBehaviour
 {
 
-	private int timerControl;
-	private int startTime;
+	private float timerControl;
+	private float startTime;
+	public int duracao;
+	private bool[] taLigadaLuz;
+	private bool[] taLigadoFogo;
 
     // Start is called before the first frame update
     void Start()
     {
+		taLigadaLuz = new bool[2];
+		taLigadoFogo = new bool[2];
+
 		startTime = Mathf.RoundToInt(Time.timeSinceLevelLoad);
     }
 
@@ -19,6 +25,9 @@ public class EventsManager : MonoBehaviour
     {
 		timerControl = Mathf.RoundToInt(Time.timeSinceLevelLoad - startTime);
 
-
+		if (timerControl >= duracao * 60)
+		{
+			//chegou no fim
+		}
 	}
 }

@@ -7,15 +7,30 @@ using UnityEngine.UI;
 public class ChangeBar : MonoBehaviour
 {
 
-    public Image image;
+    public Image[] imageLuz;
+    public Image[] imageFogo;
     public GameManager game;
-    public int obj;
-    public Light luz;
-    private float maxIntensity;
-    // Start is called before the first frame update
-    void Start()
-    {
-        maxIntensity = luz.intensity;
+    public Light[] luz;
+	public Light[] fogo;
+    private float[] maxIntensityLuz;
+    private float[] maxIntensityFogo;
+	private GameObject manager;
+	private float decreaseTime = 0.1f;
+	private bool[] taLigadaLuz;
+	private bool[] taLigadoFogo;
+
+	// Start is called before the first frame update
+	void Start()
+	{
+		taLigadaLuz = new bool[2];
+		taLigadoFogo = new bool[2];
+
+        maxIntensityLuz[0] = luz[0].intensity;
+		maxIntensityLuz[1] = luz[1].intensity;
+		maxIntensityFogo[0] = fogo[0].intensity;
+		maxIntensityFogo[1] = fogo[1].intensity;
+
+		manager = Resources.Load<GameObject>("GameManager");
     }
 
     // Update is called once per frame
@@ -23,12 +38,12 @@ public class ChangeBar : MonoBehaviour
     {
 
 
-		MudaLuzEBarra(obj);
+		MudaLuzEBarra(1);
     }
 
 	void MudaLuzEBarra(int num)
 	{
-        luz.intensity -= 0.1f * Time.deltaTime;
-        game.intensity[num] = image.fillAmount = luz.intensity/ maxIntensity;
+        luz[num].intensity -= decreaseTime * Time.deltaTime;
+        game.intensityLuz[num] = imageLuz[num].fillAmount = luz[num].intensity/ maxIntensityLuz[num];
 	}
 }
