@@ -73,14 +73,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7030d4df5f7bbb442b97f61d102fc4e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgFogo:
+  - {fileID: 0}
+  - {fileID: 0}
   imageLuz:
   - {fileID: 0}
   - {fileID: 0}
   imageFogo:
-  - {fileID: 0}
-  - {fileID: 0}
-  game: {fileID: 11400000, guid: 25212ca0b6ab81a41959c00c44240a3c, type: 2}
-  luz:
   - {fileID: 0}
   - {fileID: 0}
   fogo:
