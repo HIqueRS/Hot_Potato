@@ -26,7 +26,7 @@ public class LightManagerEditor : Editor
 
     public override void OnInspectorGUI()
     {
-        intensity = EditorGUILayout.Slider(intensity, 0f, 1f);
+        intensity = EditorGUILayout.Slider(intensity, 0f, 2f);
 
         foreach (var light in lights)
         {
