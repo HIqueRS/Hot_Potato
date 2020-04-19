@@ -706,8 +706,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_ShowDebugText: 0
-  m_ChildCameras:
-  - {fileID: 168422486}
+  m_ChildCameras: []
   m_ActivateAfter: 0
   m_MinDuration: 0
   m_RandomizeChoice: 0
@@ -2683,7 +2682,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1558086799}
-  - component: {fileID: 1558086798}
   m_Layer: 0
   m_Name: Fireplace
   m_TagString: Untagged
@@ -2691,23 +2689,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1558086798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558086797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7030d4df5f7bbb442b97f61d102fc4e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageLuz: []
-  imageFogo: []
-  game: {fileID: 0}
-  luz: []
-  fogo: []
 --- !u!4 &1558086799
 Transform:
   m_ObjectHideFlags: 0
@@ -2763,8 +2744,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_ShowDebugText: 0
-  m_ChildCameras:
-  - {fileID: 1423636830}
+  m_ChildCameras: []
   m_ActivateAfter: 0
   m_MinDuration: 0
   m_RandomizeChoice: 0
@@ -3181,8 +3161,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_ShowDebugText: 0
-  m_ChildCameras:
-  - {fileID: 1647271485}
+  m_ChildCameras: []
   m_ActivateAfter: 0
   m_MinDuration: 0
   m_RandomizeChoice: 0
@@ -4083,6 +4062,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 71116206654853702, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
+    - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: canvasFogo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: iluzinha.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
         type: 3}
       propertyPath: imageLuz.Array.data[0]
@@ -4123,6 +4117,41 @@ PrefabInstance:
       propertyPath: fogo.Array.data[1]
       value: 
       objectReference: {fileID: 486370093}
+    - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: canvasFogo.Array.data[0]
+      value: 
+      objectReference: {fileID: 1663371836}
+    - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: canvasFogo.Array.data[1]
+      value: 
+      objectReference: {fileID: 286187266}
+    - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: bgFogo.Array.data[1]
+      value: 
+      objectReference: {fileID: 2004732786}
+    - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: bgFogo.Array.data[0]
+      value: 
+      objectReference: {fileID: 1877337940}
+    - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: aaaaa
+      value: 
+      objectReference: {fileID: 486370093}
+    - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: iluzinha.Array.data[0]
+      value: 
+      objectReference: {fileID: 2106139572}
+    - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: iluzinha.Array.data[1]
+      value: 
+      objectReference: {fileID: 1198554416}
     - target: {fileID: 71116206654853707, guid: c61de7de0073f4a40a847343ae1742b2,
         type: 3}
       propertyPath: ligarCoisinhas
@@ -4519,8 +4548,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172667394723011}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000034272668}
-  m_LocalPosition: {x: 3.09, y: 1.71, z: -1.57}
+  m_LocalRotation: {x: -8.57483e-11, y: 1, z: -0, w: -0.0000003427267}
+  m_LocalPosition: {x: 3.0899997, y: 1.71, z: -1.5699997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2532376036735806726}

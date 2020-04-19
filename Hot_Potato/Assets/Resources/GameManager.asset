@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intensityLuz:
   - 0
-  - 2
+  - 0
   intensityFogo:
-  - 2
-  - 2
+  - 0.42066377
+  - 0.42066377
