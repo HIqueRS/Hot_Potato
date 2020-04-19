@@ -20,6 +20,13 @@ public class ChangeBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        game.intensity[obj] = image.fillAmount = luz.intensity -= 0.1f*Time.deltaTime; 
+
+
+		MudaLuzEBarra(obj);
     }
+
+	void MudaLuzEBarra(int num)
+	{
+		game.intensity[num] = image.fillAmount = luz.intensity -= 0.1f * Time.deltaTime;
+	}
 }

@@ -13,7 +13,8 @@ public class SliderManager : MonoBehaviour
 	private float maximo;
 	public Image areaCerta;
 	private float posAreaCerta;
-	public TextMeshProUGUI mensagem;
+	[Tooltip("em float, 1 ja fica consideravelmente rapido")]
+	public float velSlider;
 
 
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class SliderManager : MonoBehaviour
     {
 		aumentando = true;
 
-		minimo = Random.Range(0, 0.8f);
+		minimo = Random.Range(0.2f, 0.6f);
 		maximo = minimo + (tamanhoSlider / 1000);
 
 		posAreaCerta = minimo * tamanhoSlider;
@@ -37,11 +38,7 @@ public class SliderManager : MonoBehaviour
 		{
 			if (ligarCoisinhas.value >= minimo && ligarCoisinhas.value <= maximo)
 			{
-				mensagem.text = "AE CARALEO";
-			}
-			else
-			{
-				mensagem.text = "ohno";
+
 			}
 		}
 
@@ -51,11 +48,11 @@ public class SliderManager : MonoBehaviour
 	{
 		if (aumentando)
 		{
-			ligarCoisinhas.value += Time.deltaTime * (0.5f);
+			ligarCoisinhas.value += Time.deltaTime * (velSlider);
 		}
 		else if (!aumentando)
 		{
-			ligarCoisinhas.value -= Time.deltaTime * (0.5f);
+			ligarCoisinhas.value -= Time.deltaTime * (velSlider);
 		}
 
 		if (ligarCoisinhas.value >= 1)
