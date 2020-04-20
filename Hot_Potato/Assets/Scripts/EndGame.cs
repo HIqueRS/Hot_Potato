@@ -15,6 +15,7 @@ public class EndGame : MonoBehaviour
 	public float max;
 	public Animator leftWindow;
 	public Animator rightWindow;
+	public Animator door;
 
 	//public Animation
 	
@@ -37,12 +38,12 @@ public class EndGame : MonoBehaviour
 		
 		if (gamMan.iniciou)
 		{
-			
-			
+			Ending();
+			Events();
+
 		}
-		Ending();
-		Events();
 		
+
 	}
 
 	private void Ending()
@@ -74,15 +75,26 @@ public class EndGame : MonoBehaviour
 		delay += Time.deltaTime;
 		if(time > timeOfGame/3)
 		{
-			Debug.Log(delay + " delay");
-			Debug.Log(delayWind + " delayWind");
+			
 			
 			if (delay > delayWind )
 			{
 				//changeBar.function(Random.Range(0, 1));
 				//call a animacao
-				leftWindow.SetTrigger("teste");
-				rightWindow.SetTrigger("Open");
+				if(Random.Range(0,2) == 0)
+				{
+					leftWindow.SetTrigger("Open");
+					rightWindow.SetTrigger("Open");
+					changeBar.Evento(0, 0.12f);
+					
+				}
+				else
+				{
+					door.SetTrigger("Open");
+					changeBar.Evento(1, 0.12f);
+				}
+				
+				
 				Debug.Log("ue");
 				delayWind = Random.Range(min, max);
 				delay = 0;
