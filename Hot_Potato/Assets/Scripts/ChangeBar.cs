@@ -20,11 +20,11 @@ public class ChangeBar : MonoBehaviour
 	private float decreaseFogo;
 	private bool[] taLigadaLuz;
 	private bool[] taLigadoFogo;
-	private static int sala = 0;
-	private static int cozinha = 1;
-	private bool primeiraCoisa = true;
+	private static readonly int sala = 0;
+	private static readonly int cozinha = 1;
 	private float[] diminuiAlfabg;
 	private float[] diminuiAlfaim;
+	private bool iniciou = false;
 
 	
 
@@ -45,10 +45,27 @@ public class ChangeBar : MonoBehaviour
 		diminuiAlfaim[cozinha] = 1;
 		diminuiAlfaim[cozinha] = 1;
 
-		maxIntensityLuz[0] = iluzinha[0].intensity;
+		maxIntensityLuz[sala] = iluzinha[sala].intensity;
 		maxIntensityLuz[cozinha] = iluzinha[cozinha].intensity;
 		maxIntensityFogo[sala] = fogo[sala].intensity;
 		maxIntensityFogo[cozinha] = fogo[cozinha].intensity;
+
+		iluzinha[cozinha].intensity = 0;
+		fogo[sala].intensity = 0;
+		fogo[cozinha].intensity = 0;
+
+		imageLuz[cozinha].fillAmount = 0;
+		imageFogo[cozinha].fillAmount = 0;
+		imageFogo[sala].fillAmount = 0;
+
+		taLigadaLuz[sala] = true;
+		taLigadaLuz[cozinha] = false;
+		taLigadoFogo[sala] = false;
+		taLigadoFogo[cozinha] = false;
+
+		bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, 0);
+
+		Debug.Log(bgFogo[sala].color);
 
 		manager = GameObject.FindGameObjectWithTag("GameController");
 		game = Resources.Load<GameManager>("GameManager");
@@ -57,10 +74,26 @@ public class ChangeBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		MudaLuzEBarra(sala);
-		MudaLuzEBarra(cozinha);
-		MudaFogoEBarra(sala);
-		MudaFogoEBarra(cozinha);
+
+		if (iluzinha[sala].intensity > 0)
+		{
+			MudaLuzEBarra(sala);
+		}
+		
+		if (iluzinha[cozinha].intensity > 0)
+		{
+			MudaLuzEBarra(cozinha);
+		}
+
+		if (fogo[sala].intensity > 0)
+		{
+			MudaFogoEBarra(sala);
+		}
+
+		if (fogo[cozinha].intensity > 0)
+		{
+			MudaFogoEBarra(cozinha);
+		}
 
 		TestaIntensityLuzes();
 	}
@@ -78,11 +111,18 @@ public class ChangeBar : MonoBehaviour
 
 	void TestaIntensityLuzes()
 	{
-		if (iluzinha[sala].intensity <= 0)
+		if (iluzinha[sala].intensity <= 0 || !iniciou)
 		{
-			iluzinha[sala].intensity = 0;
+
+			if (iniciou)
+			{
+				iluzinha[sala].intensity = 0;
+			}
+			
 			bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, DiminuiAlfaBG(sala));
 			imageFogo[sala].color = new Color(imageFogo[sala].color.r, imageFogo[sala].color.g, imageFogo[sala].color.b, DiminuiAlfaIM(sala));
+
+			taLigadaLuz[sala] = false;
 		}
 		else
 		{
@@ -90,12 +130,16 @@ public class ChangeBar : MonoBehaviour
 			imageFogo[sala].color = new Color(imageFogo[sala].color.r, imageFogo[sala].color.g, imageFogo[sala].color.b, 1);
 
 			diminuiAlfabg[sala] = diminuiAlfaim[sala] = 1;
+
+			taLigadaLuz[sala] = true;
 		}
 		if (iluzinha[cozinha].intensity <= 0)
 		{
 			iluzinha[cozinha].intensity = 0;
 			bgFogo[cozinha].color = new Color(bgFogo[cozinha].color.r, bgFogo[cozinha].color.g, bgFogo[cozinha].color.b, DiminuiAlfaBG(cozinha));
 			imageFogo[cozinha].color = new Color(imageFogo[cozinha].color.r, imageFogo[cozinha].color.g, imageFogo[cozinha].color.b, DiminuiAlfaIM(cozinha));
+
+			taLigadaLuz[cozinha] = false;
 		}
 		else
 		{
@@ -103,11 +147,13 @@ public class ChangeBar : MonoBehaviour
 			imageFogo[cozinha].color = new Color(imageFogo[cozinha].color.r, imageFogo[cozinha].color.g, imageFogo[cozinha].color.b, 1);
 
 			diminuiAlfabg[cozinha] = diminuiAlfaim[cozinha] = 1;
+
+			taLigadaLuz[cozinha] = true;
 		}
 	}
 	float DiminuiAlfaBG(int comodo)
 	{
-		if (diminuiAlfabg[comodo] > 0)
+		if (diminuiAlfabg[comodo] > 0 && !iniciou)
 		{
 			diminuiAlfabg[comodo] -= 0.5f * Time.deltaTime;
 		}
