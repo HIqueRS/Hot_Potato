@@ -27,6 +27,11 @@ public class EventsManager : MonoBehaviour
     void Update()
     {
 
+
+		ControlaTempo();
+	}
+	void ControlaTempo()
+	{
 		if (game.iniciou && !start)
 		{
 			startTime = Mathf.RoundToInt(Time.timeSinceLevelLoad);

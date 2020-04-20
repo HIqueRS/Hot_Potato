@@ -63,10 +63,6 @@ public class ChangeBar : MonoBehaviour
 		taLigadoFogo[sala] = false;
 		taLigadoFogo[cozinha] = false;
 
-		bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, 0);
-
-		Debug.Log(bgFogo[sala].color);
-
 		manager = GameObject.FindGameObjectWithTag("GameController");
 		game = Resources.Load<GameManager>("GameManager");
     }
@@ -119,12 +115,18 @@ public class ChangeBar : MonoBehaviour
 			if (iniciou)
 			{
 				iluzinha[sala].intensity = 0;
+
+				bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, DiminuiAlfaBG(sala));
+				imageFogo[sala].color = new Color(imageFogo[sala].color.r, imageFogo[sala].color.g, imageFogo[sala].color.b, DiminuiAlfaIM(sala));
+
+				taLigadaLuz[sala] = false;
+			}
+			else
+			{
+				bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, 0);
 			}
 			
-			bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, DiminuiAlfaBG(sala));
-			imageFogo[sala].color = new Color(imageFogo[sala].color.r, imageFogo[sala].color.g, imageFogo[sala].color.b, DiminuiAlfaIM(sala));
-
-			taLigadaLuz[sala] = false;
+			
 		}
 		else
 		{
@@ -155,10 +157,9 @@ public class ChangeBar : MonoBehaviour
 	}
 	float DiminuiAlfaBG(int comodo)
 	{
-		if (diminuiAlfabg[comodo] > 0 && !iniciou)
-		{
-			diminuiAlfabg[comodo] -= 0.5f * Time.deltaTime;
-		}
+		
+		diminuiAlfabg[comodo] -= 0.5f * Time.deltaTime;
+		
 
 		return diminuiAlfabg[comodo];
 	}
