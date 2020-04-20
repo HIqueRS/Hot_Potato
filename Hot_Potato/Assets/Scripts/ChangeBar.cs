@@ -16,7 +16,7 @@ public class ChangeBar : MonoBehaviour
 	private float[] maxIntensityLuz;
 	private float[] maxIntensityFogo;
 	private GameObject manager;
-	private float decreaseLuz;
+	public float decreaseLuz;
 	private float decreaseFogo;
 	private bool[] taLigadaLuz;
 	private bool[] taLigadoFogo;
@@ -70,6 +70,8 @@ public class ChangeBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		
+
 		if (fogaoAceso && lareiraAcesa)
 		{
 			iniciou = true;
@@ -82,6 +84,8 @@ public class ChangeBar : MonoBehaviour
 		TestaIntensityLuzes();
 
 		TestaIntensityFogo();
+
+		//iluzinha[sala].intensity -= 0.1f;
 	}
 
 	void MudaIntensidadeLuz()

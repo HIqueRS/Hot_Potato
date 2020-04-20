@@ -35,7 +35,7 @@ public class CallForMinigame : MonoBehaviour
 				}
                     //call aqui
                     Debug.Log("aaa");
-                }
+               
             }
             else if (gameObject.tag == "FogoCozinha")
             {
@@ -45,7 +45,7 @@ public class CallForMinigame : MonoBehaviour
 				}
                     //call aqui
                     Debug.Log("aaa");
-                }
+                
             }
             else if (gameObject.tag == "FogoSala")
             {
@@ -55,7 +55,7 @@ public class CallForMinigame : MonoBehaviour
 				}
                     //call aqui
                     Debug.Log("aaa");
-                }
+               
             }
         }
     }
