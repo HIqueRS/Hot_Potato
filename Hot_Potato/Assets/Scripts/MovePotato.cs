@@ -38,6 +38,8 @@ public class MovePotato : MonoBehaviour
                         man.luzSala = false;
                         man.fogoCozinha = false;
                         man.fogoSala = false;
+
+
                     }
                     else if(hit.transform.gameObject.tag == "LuzSala")
                     {

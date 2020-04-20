@@ -30,12 +30,14 @@ public class SliderManager : MonoBehaviour
 
 	private bool chamou1 = true;
 
+	private GameManager gamMan;
+
 	// Start is called before the first frame update
 	void Start()
     {
 		aumentando = true;
 
-		
+		gamMan = Resources.Load<GameManager>("GameManager");
 
 		gManager = GameObject.FindGameObjectWithTag("GameController");
 	}
@@ -49,12 +51,15 @@ public class SliderManager : MonoBehaviour
 		{
 			if (chamou1)
 			{
-				minimo = Random.Range(0.2f, 0.6f);
+				minimo = Random.Range(0.2f, 0.8f);
 				maximo = minimo + (tamanhoSlider / 1000);
 
 				posAreaCerta = minimo * tamanhoSlider;
 
-				areaCerta.rectTransform.Translate(new Vector3(posAreaCerta, 0, 0));
+				//areaCerta.rectTransform.Translate(new Vector3(posAreaCerta, 0, 0));
+
+				areaCerta.rectTransform.anchoredPosition = new Vector3(posAreaCerta, 0, 0);
+
 
 				chamou1 = false;
 			}
@@ -81,6 +86,7 @@ public class SliderManager : MonoBehaviour
 					}
 
 					ligarCoisinhas.value = 0;
+					gamMan.jogoComecou = true;
 				}
 				else
 				{
@@ -92,12 +98,18 @@ public class SliderManager : MonoBehaviour
 
 					chamou = false;
 
-					painelErrou.color = new Color(painelErrou.color.r, painelErrou.color.g, painelErrou.color.b, 0.6f);
-
 					piscaPisca = 0.6f;
+
+					painelErrou.color = new Color(painelErrou.color.r, painelErrou.color.g, painelErrou.color.b, piscaPisca);					
+
+					ligarCoisinhas.value = 0;
 				}
 
 				chamou1 = true;
+
+				posAreaCerta = 0;
+				minimo = 0;
+				maximo = 0;
 			}
 		}
 		if (errou)
@@ -130,14 +142,21 @@ public class SliderManager : MonoBehaviour
 
 	public void ChamaMiniGame(int oQue, int onde)
 	{
-		painel.SetActive(true);
 
-		chamou = true;
+		if (chamou1)
+		{
+			painel.SetActive(true);
 
-		tipo = oQue;
-		lugar = onde;
+			chamou = true;
 
-		ligarCoisinhas.value = 0;
+			tipo = oQue;
+			lugar = onde;
+
+			ligarCoisinhas.value = 0;
+
+			gamMan.jogoComecou = false;
+		}
+		
 	}
 
 	void PiscaPanel()
@@ -192,5 +211,7 @@ public class SliderManager : MonoBehaviour
 
 			chamou = false;
 		}
+
+		gamMan.jogoComecou = true;
 	}
 }

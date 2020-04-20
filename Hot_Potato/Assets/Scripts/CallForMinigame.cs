@@ -24,7 +24,7 @@ public class CallForMinigame : MonoBehaviour
                 if (gamMan.luzCozinha)
                 {
 					gManager.GetComponent<SliderManager>().ChamaMiniGame(0, 1);
-                    Debug.Log("aaa");
+                    Debug.Log("luz cozinha");
                 }
             }
             else if (gameObject.tag == "LuzSala")
@@ -58,5 +58,66 @@ public class CallForMinigame : MonoBehaviour
                 
             }
         }
-    } 
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Potato")
+        {
+            if (gameObject.tag == "LuzCozinha")
+            {
+                if (gamMan.luzCozinha)
+                {
+                    if(gamMan.intensityLuz[1] < 1f)
+                    {
+                        gManager.GetComponent<SliderManager>().ChamaMiniGame(0, 1);
+                        Debug.Log("luz cozinha");
+
+                    }
+                }
+            }
+            else if (gameObject.tag == "LuzSala")
+            {
+                if (gamMan.luzSala)
+                {
+                    if (gamMan.intensityLuz[0] < 1f)
+                    {
+                        gManager.GetComponent<SliderManager>().ChamaMiniGame(0, 0);
+                    }
+                        
+                }
+                //call aqui
+                Debug.Log("aaa");
+
+            }
+            else if (gameObject.tag == "FogoCozinha")
+            {
+                if (gamMan.fogoCozinha)
+                {
+                    if (gamMan.intensityFogo[1] < 1f)
+                    {
+                        gManager.GetComponent<SliderManager>().ChamaMiniGame(1, 1);
+
+                    }
+                }
+                //call aqui
+                Debug.Log("aaa");
+
+            }
+            else if (gameObject.tag == "FogoSala")
+            {
+                if (gamMan.fogoSala)
+                {
+                    if (gamMan.intensityFogo[0] < 1f)
+                    {
+                        gManager.GetComponent<SliderManager>().ChamaMiniGame(1, 0);
+
+                    }
+                }
+                //call aqui
+                Debug.Log("aaa");
+
+            }
+        }
+    }
 }
