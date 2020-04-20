@@ -174,7 +174,7 @@ public class SliderManager : MonoBehaviour
 		{
 			piscaPisca -= 0.6f * Time.deltaTime;
 
-			Debug.Log(piscaPisca);
+			//Debug.Log(piscaPisca);
 		}
 		else if (piscaPisca <= 0.6f && aumentaAlfa)
 		{

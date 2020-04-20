@@ -8,31 +8,83 @@ public class EndGame : MonoBehaviour
     private GameManager gamMan;
     private float time;
     public float timeOfGame;
+	public ChangeBar changeBar;
+	private float delayWind;
+	private float delay;
+	public float min;
+	public float max;
+	public Animator animator;
+
+	//public Animation
+	
     // Start is called before the first frame update
     void Start()
     {
         time = 0;
-        gamMan = Resources.Load<GameManager>("GameManager");
+		delay = 0;
+		gamMan = Resources.Load<GameManager>("GameManager");
+		changeBar = gameObject.GetComponent<ChangeBar>();
+
+		timeOfGame *= 60;
+
+		delayWind = Random.Range(min, max);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gamMan.iniciou)
-        {
-            time += Time.deltaTime;
-            if(gamMan.intensityFogo[0] <=0 && gamMan.intensityFogo[1] <=0)
-            {
-                //gameover
-                Debug.Log("GameOver");
+		
+		if (gamMan.iniciou)
+		{
+			
+			
+		}
+		Ending();
+		Events();
+		
+	}
 
-            }
+	private void Ending()
+	{		
+		time += Time.deltaTime;
+		if (gamMan.intensityFogo[0] <= 0 && gamMan.intensityFogo[1] <= 0)
+		{			
+			GameOver();
+		}
 
-            if(time >= timeOfGame)
-            {
-                Debug.Log("Ganhou");
-            }
+		if (time >= timeOfGame)
+		{			
+			Win();
+		}		
+	}
 
-        }
-    }
+	private void GameOver()
+	{
+
+	}
+
+	private void Win()
+	{
+
+	}
+
+	private void Events()
+	{
+		delay += Time.deltaTime;
+		if(time > timeOfGame/3)
+		{
+			Debug.Log(delay + " delay");
+			Debug.Log(delayWind + " delayWind");
+			
+			if (delay > delayWind )
+			{
+				//changeBar.function(Random.Range(0, 1));
+				//call a animacao
+				animator.SetTrigger("teste");
+				Debug.Log("ue");
+				delayWind = Random.Range(min, max);
+				delay = 0;
+			}
+		}
+	}
 }

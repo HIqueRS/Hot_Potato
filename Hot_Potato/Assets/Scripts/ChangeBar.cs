@@ -44,8 +44,8 @@ public class ChangeBar : MonoBehaviour
 		diminuiAlfabg = new float[2];
 
 		diminuiAlfabg[sala] = 1;
-		diminuiAlfabg[sala] = 1;
-		diminuiAlfaim[cozinha] = 1;
+		diminuiAlfabg[cozinha] = 1;
+		diminuiAlfaim[sala] = 1;
 		diminuiAlfaim[cozinha] = 1;
 
 		maxIntensityLuz[sala] = iluzinha[sala].intensity;
@@ -79,13 +79,14 @@ public class ChangeBar : MonoBehaviour
 		{
 			iniciou = true;
 			tutorial = false;
+			game.iniciou = iniciou;
 		}
 		else
 		{
 			tutorial = true;
 		}
 
-		game.iniciou = iniciou;
+		
 
 		if (tutorial)
 		{
