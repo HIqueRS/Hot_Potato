@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 9d6b7a1b757a89248b229bd5ec5ca919
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: -3287827117233156830
+    second: PLANTA COZINHA|BATATINHA BRACOSAction.006
+  - first:
+      74: -7001198065822961395
+    second: PLANTA COZINHA|BATATINHA BRACOSAction.007
+  - first:
+      74: -2253098367691208949
+    second: PLANTA COZINHA|BATATINHA BRACOSAction.008
+  - first:
+      74: 1095431959580105554
+    second: PLANTA COZINHA|BATATINHA PERNASAction.006
+  - first:
+      74: -1397528308663839284
+    second: PLANTA COZINHA|BATATINHA PERNASAction.007
+  - first:
+      74: 6212245251345380771
+    second: PLANTA COZINHA|BATATINHA PERNASAction.008
+  - first:
+      74: 1040850342360040604
+    second: PLANTA COZINHA|BATATINHAAction.001
+  - first:
+      74: 2356891877524564077
+    second: PLANTA COZINHA|FOGAO FOGOAction.001
+  - first:
+      74: -2664293114601643401
+    second: PLANTA COZINHA|JANELA.001Action.000
+  - first:
+      74: -287069058442314225
+    second: PLANTA COZINHA|JANELAAction.002
+  - first:
+      74: -1658971734133351773
+    second: PLANTA COZINHA|JANELAAction.003
+  - first:
+      74: -3262115733064916861
+    second: PLANTA COZINHA|LAMPADA FOGO 1Action.000
+  - first:
+      74: -8136440878517160221
+    second: PLANTA COZINHA|LAMPADA FOGO 2Action.001
+  - first:
+      74: -1224212384846942447
+    second: PLANTA COZINHA|LAREIRA FOGOAction.000
+  - first:
+      74: 9146796687242789889
+    second: PLANTA COZINHA|PANELA CENOURASAction.000
+  - first:
+      74: 4656684135123482414
+    second: PLANTA COZINHA|PORTAAction.002
+  - first:
+      74: -931064251185683270
+    second: PLANTA COZINHA|PORTAAction.003
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

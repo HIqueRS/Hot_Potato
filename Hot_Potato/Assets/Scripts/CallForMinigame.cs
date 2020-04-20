@@ -38,6 +38,7 @@ public class CallForMinigame : MonoBehaviour
                 if (gamMan.luzSala)
                 {
                     //call aqui
+                    Debug.Log("aaa");
                 }
             }
             else if (gameObject.tag == "FogoCozinha")
@@ -45,6 +46,7 @@ public class CallForMinigame : MonoBehaviour
                 if (gamMan.fogoCozinha)
                 {
                     //call aqui
+                    Debug.Log("aaa");
                 }
             }
             else if (gameObject.tag == "FogoSala")
@@ -52,6 +54,7 @@ public class CallForMinigame : MonoBehaviour
                 if (gamMan.fogoSala)
                 {
                     //call aqui
+                    Debug.Log("aaa");
                 }
             }
         }
