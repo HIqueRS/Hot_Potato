@@ -10,12 +10,6 @@ public class SmashTheButton : MonoBehaviour
 	public Slider hitThatButton;
 	public TextMeshProUGUI dale;
 
-	//// Start is called before the first frame update
-	//void Start()
-	//{
-
-	//}
-
 	// Update is called once per frame
 	void Update()
 	{

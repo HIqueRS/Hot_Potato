@@ -6,30 +6,24 @@ public class CallForMinigame : MonoBehaviour
 {
 
     private GameManager gamMan;
+	private GameObject gManager;
 
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
         gamMan = Resources.Load<GameManager>("GameManager");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+		gManager = GameObject.FindGameObjectWithTag("GameController");
+	}
 
     private void OnTriggerEnter(Collider other)
     {
-
-       
         if (other.gameObject.tag == "Potato")
         {
             if (gameObject.tag == "LuzCozinha")
             {
                 if (gamMan.luzCozinha)
                 {
-                    //call aqui
+					gManager.GetComponent<SliderManager>().ChamaMiniGame(0, 1);
                     Debug.Log("aaa");
                 }
             }
@@ -37,25 +31,27 @@ public class CallForMinigame : MonoBehaviour
             {
                 if (gamMan.luzSala)
                 {
-                    //call aqui
-                }
+					gManager.GetComponent<SliderManager>().ChamaMiniGame(0, 0);
+				}
             }
             else if (gameObject.tag == "FogoCozinha")
             {
                 if (gamMan.fogoCozinha)
                 {
-                    //call aqui
-                }
+					gManager.GetComponent<SliderManager>().ChamaMiniGame(1, 1);
+				}
             }
             else if (gameObject.tag == "FogoSala")
             {
                 if (gamMan.fogoSala)
                 {
-                    //call aqui
-                }
+					gManager.GetComponent<SliderManager>().ChamaMiniGame(1, 0);
+				}
             }
         }
     }
+
+	
 
   
 }
