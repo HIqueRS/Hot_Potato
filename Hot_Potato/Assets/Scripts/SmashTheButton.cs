@@ -11,10 +11,12 @@ public class SmashTheButton : MonoBehaviour
 	public TextMeshProUGUI dale;
 
 	private GameObject slider;
+	private GameManager gamMan;
 
 	private void Start()
 	{
 		slider = GameObject.FindGameObjectWithTag("GameController");
+		gamMan = Resources.Load<GameManager>("GameManager");
 	}
 
 	// Update is called once per frame
@@ -35,6 +37,11 @@ public class SmashTheButton : MonoBehaviour
 			hitThatButton.value = 0;
 
 			slider.GetComponent<SliderManager>().AcertouBotao();
+			gamMan.inMinigame = false;
+			gamMan.luzCozinha = false;
+			gamMan.luzSala = false;
+			gamMan.fogoCozinha = false;
+			gamMan.fogoSala = false;
 		}
 	}
 

@@ -16,6 +16,8 @@ public class GameManager : ScriptableObject
     public bool fogoSala;
     public bool fogoCozinha;
 
+	public bool inMinigame;
+
     public void Comecar(bool comecou)
     {
         jogoComecou = comecou;
