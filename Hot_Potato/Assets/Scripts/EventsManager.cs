@@ -17,11 +17,6 @@ public class EventsManager : MonoBehaviour
 		taLigadaLuz = new bool[2];
 		taLigadoFogo = new bool[2];
 
-		taLigadaLuz[0] = true;
-		taLigadaLuz[1] = false;
-		taLigadoFogo[0] = true;
-		taLigadoFogo[1] = true;
-
 		startTime = Mathf.RoundToInt(Time.timeSinceLevelLoad);
     }
 

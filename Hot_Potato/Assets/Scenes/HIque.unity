@@ -4874,8 +4874,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_ShowDebugText: 0
-  m_ChildCameras:
-  - {fileID: 1916073666}
+  m_ChildCameras: []
   m_ActivateAfter: 0
   m_MinDuration: 0
   m_RandomizeChoice: 0
@@ -4998,6 +4997,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 71116206654853700, guid: c61de7de0073f4a40a847343ae1742b2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 71116206654853701, guid: c61de7de0073f4a40a847343ae1742b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5142,12 +5146,12 @@ PrefabInstance:
         type: 3}
       propertyPath: iluzinha.Array.data[0]
       value: 
-      objectReference: {fileID: 2106139572}
+      objectReference: {fileID: 1198554416}
     - target: {fileID: 71116206654853706, guid: c61de7de0073f4a40a847343ae1742b2,
         type: 3}
       propertyPath: iluzinha.Array.data[1]
       value: 
-      objectReference: {fileID: 1198554416}
+      objectReference: {fileID: 2106139572}
     - target: {fileID: 71116206654853707, guid: c61de7de0073f4a40a847343ae1742b2,
         type: 3}
       propertyPath: ligarCoisinhas
@@ -5158,7 +5162,8 @@ PrefabInstance:
       propertyPath: areaCerta
       value: 
       objectReference: {fileID: 553087233}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 71116206654853700, guid: c61de7de0073f4a40a847343ae1742b2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c61de7de0073f4a40a847343ae1742b2, type: 3}
 --- !u!4 &163525026629843798
 Transform:
