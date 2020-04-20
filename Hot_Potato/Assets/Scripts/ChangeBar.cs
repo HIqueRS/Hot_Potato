@@ -28,6 +28,8 @@ public class ChangeBar : MonoBehaviour
 	private bool lareiraAcesa = false;
 	private bool fogaoAceso = false;
 
+	private bool ligouCozinha = false;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -79,12 +81,19 @@ public class ChangeBar : MonoBehaviour
 
 		game.iniciou = iniciou;
 
+		if(iniciou)
+		{
+
+
+			MudaIntensidadeLuz();
+
+
+		}
 		MudaIntensidadeLuz();
 
 		TestaIntensityLuzes();
 
 		TestaIntensityFogo();
-
 		//iluzinha[sala].intensity -= 0.1f;
 	}
 
@@ -144,7 +153,7 @@ public class ChangeBar : MonoBehaviour
 
 	void TestaIntensityLuzes()
 	{
-		if (iluzinha[sala].intensity <= 0 || !iniciou)
+		if (iluzinha[sala].intensity <= 0 || (!iniciou))
 		{
 
 			if (iniciou)
@@ -156,7 +165,7 @@ public class ChangeBar : MonoBehaviour
 
 				taLigadaLuz[sala] = false;
 			}
-			else
+			else if (iniciou && ligouCozinha)
 			{
 				bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, 0);
 			}

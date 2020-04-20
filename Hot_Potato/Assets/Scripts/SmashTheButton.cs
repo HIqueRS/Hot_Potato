@@ -32,7 +32,7 @@ public class SmashTheButton : MonoBehaviour
 
 		if (hitThatButton.value >= 0.9)
 		{
-			hitThatButton.value = 1;
+			hitThatButton.value = 0;
 
 			slider.GetComponent<SliderManager>().AcertouBotao();
 		}
