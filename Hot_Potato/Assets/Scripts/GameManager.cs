@@ -22,4 +22,5 @@ public class GameManager : ScriptableObject
     {
         jogoComecou = comecou;
     }
+
 }

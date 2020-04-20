@@ -8,11 +8,13 @@ public class MovePotato : MonoBehaviour
     public Camera cam;
     public NavMeshAgent agent;
     public GameManager man;
+	private bool holdUp;
 
     // Update is called once per frame
     private void Start()
     {
         man = Resources.Load<GameManager>("GameManager");
+		holdUp = false;
     }
 
     void Update()
@@ -38,46 +40,89 @@ public class MovePotato : MonoBehaviour
 						man.luzSala = false;
 						man.fogoCozinha = false;
 						man.fogoSala = false;
+						holdUp = false;
 					}
-					else if (hit.transform.gameObject.tag == "LuzCozinha")
+					else if (hit.transform.gameObject.tag == "LuzCozinha" )
                     {
-                        man.luzCozinha = true;
-                        man.luzSala = false;
-                        man.fogoCozinha = false;
-                        man.fogoSala = false;
+						if(!holdUp)
+						{
+							man.luzCozinha = true;
+							man.luzSala = false;
+							man.fogoCozinha = false;
+							man.fogoSala = false;
+							holdUp = true;
+						}
+						else
+						{
+							holdUp = false;
+						}
+                       
 
-
-                    }
+					}
                     else if(hit.transform.gameObject.tag == "LuzSala")
                     {
-                        man.luzCozinha = false;
-                        man.luzSala = true;
-                        man.fogoCozinha = false;
-                        man.fogoSala = false;
-                    }
+						if (!holdUp)
+						{
+							man.luzCozinha = false;
+							man.luzSala = true;
+							man.fogoCozinha = false;
+							man.fogoSala = false;
+							holdUp = true;
+						}
+						else
+						{
+							holdUp = false;
+						}
+
+					}
                     else if (hit.transform.gameObject.tag == "FogoCozinha")
                     {
-                        man.luzCozinha = false;
-                        man.luzSala = false;
-                        man.fogoCozinha = true;
-                        man.fogoSala = false;
-                    }
+						if (!holdUp)
+						{
+							man.luzCozinha = false;
+							man.luzSala = false;
+							man.fogoCozinha = true;
+							man.fogoSala = false;
+							holdUp = true;
+						}
+						else
+						{
+							holdUp = false;
+						}
+
+					}
                     else if (hit.transform.gameObject.tag == "FogoSala")
                     {
-                        man.luzCozinha = false;
-                        man.luzSala = false;
-                        man.fogoCozinha = false;
-                        man.fogoSala = true;
-                    }
+						if (!holdUp)
+						{
+							man.luzCozinha = false;
+							man.luzSala = false;
+							man.fogoCozinha = false;
+							man.fogoSala = true;
+							holdUp = true;
+						}
+						else
+						{
+							holdUp = false;
+						}
+
+					}
                     else
                     {
                         man.luzCozinha = false;
                         man.luzSala = false;
                         man.fogoCozinha = false;
                         man.fogoSala = false;
+						holdUp = false;
                     }
                 }
             }
         }
+		
     }
+
+	private void LateUpdate()
+	{
+		
+	}
 }
