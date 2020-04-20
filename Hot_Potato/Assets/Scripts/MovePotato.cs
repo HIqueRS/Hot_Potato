@@ -32,7 +32,14 @@ public class MovePotato : MonoBehaviour
                     agent.SetDestination(hit.point);
 
                     Debug.Log(hit.transform.gameObject.name);
-                    if (hit.transform.gameObject.tag == "LuzCozinha")
+					if(man.inMinigame)
+					{
+						man.luzCozinha = false;
+						man.luzSala = false;
+						man.fogoCozinha = false;
+						man.fogoSala = false;
+					}
+					else if (hit.transform.gameObject.tag == "LuzCozinha")
                     {
                         man.luzCozinha = true;
                         man.luzSala = false;

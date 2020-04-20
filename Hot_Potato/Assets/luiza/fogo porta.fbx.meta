@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 0b1b6fdddcf3c524d9f4714626a08433
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: -1890609814889615966
+    second: FOGO LAMPADA COZINHA
+  - first:
+      74: 8057567983740029012
+    second: FOGO PORTA.001|BATATINHA BRACOSAction.000
+  - first:
+      74: -894337907457238374
+    second: FOGO PORTA.001|BATATINHA BRACOSAction.001
+  - first:
+      74: 7209945343360393119
+    second: FOGO PORTA.001|BATATINHA BRACOSAction.002
+  - first:
+      74: 8596464439997332804
+    second: FOGO PORTA.001|BATATINHA BRACOSAction.003
+  - first:
+      74: -7096161858893606647
+    second: FOGO PORTA.001|BATATINHA BRACOSAction.004
+  - first:
+      74: 8563285309337317225
+    second: FOGO PORTA.001|BATATINHA BRACOSAction.005
+  - first:
+      74: -7439179287210024831
+    second: FOGO PORTA.001|BATATINHA PERNASAction.000
+  - first:
+      74: -2994216255004862603
+    second: FOGO PORTA.001|BATATINHA PERNASAction.001
+  - first:
+      74: -6013286742184646687
+    second: FOGO PORTA.001|BATATINHA PERNASAction.002
+  - first:
+      74: 5252687028369971112
+    second: FOGO PORTA.001|BATATINHA PERNASAction.003
+  - first:
+      74: 4029959244343219512
+    second: FOGO PORTA.001|BATATINHA PERNASAction.004
+  - first:
+      74: 4152691349993297039
+    second: FOGO PORTA.001|BATATINHA PERNASAction.005
+  - first:
+      74: 8426977379746533751
+    second: FOGO PORTA.001|BATATINHAAction.000
+  - first:
+      74: 8366007922460219241
+    second: FOGO PORTA.001|BATATINHAAction.002
+  - first:
+      74: 8232973881108701610
+    second: FOGO PORTA.001|FOGAO FOGOAction
+  - first:
+      74: 306247652416221833
+    second: FOGO PORTA.001|FOGAO FOGOAction.001
+  - first:
+      74: 7885972488188521130
+    second: FOGO PORTA.001|JANELA.001Action.000
+  - first:
+      74: 7116866801839897083
+    second: FOGO PORTA.001|JANELA.001Action.001
+  - first:
+      74: -2288958463711732928
+    second: FOGO PORTA.001|JANELAAction
+  - first:
+      74: 5803944130680727439
+    second: FOGO PORTA.001|JANELAAction.001
+  - first:
+      74: 3707521116388622004
+    second: FOGO PORTA.001|JANELAAction.002
+  - first:
+      74: -6004562643255410519
+    second: FOGO PORTA.001|JANELAAction.003
+  - first:
+      74: -3972664568250365370
+    second: FOGO PORTA.001|LAMPADA FOGO 1Action.000
+  - first:
+      74: -4680204865463610448
+    second: FOGO PORTA.001|LAMPADA FOGO 1Action.001
+  - first:
+      74: 6359398851917563629
+    second: FOGO PORTA.001|LAMPADA FOGO 2Action
+  - first:
+      74: -2248391830426752334
+    second: FOGO PORTA.001|LAMPADA FOGO 2Action.001
+  - first:
+      74: -4988622918022255396
+    second: FOGO PORTA.001|LAREIRA FOGOAction.000
+  - first:
+      74: -4635589825417453973
+    second: FOGO PORTA.001|LAREIRA FOGOAction.002
+  - first:
+      74: 4267134856044643549
+    second: FOGO PORTA.001|PANELA CENOURASAction.000
+  - first:
+      74: 5922549525955831834
+    second: FOGO PORTA.001|PANELA CENOURASAction.005
+  - first:
+      74: -3778276446157205511
+    second: FOGO PORTA.001|PORTAAction
+  - first:
+      74: 2999107404646608202
+    second: FOGO PORTA.001|PORTAAction.001
+  - first:
+      74: -151729225622366310
+    second: FOGO PORTA.001|PORTAAction.002
+  - first:
+      74: -6691534708367430244
+    second: FOGO PORTA.001|PORTAAction.003
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

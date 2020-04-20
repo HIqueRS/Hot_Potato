@@ -22,6 +22,8 @@ public class Manager : MonoBehaviour
         gamMan.luzSala = false;
         gamMan.luzCozinha = false;
         gamMan.fogoCozinha = false;
+
+		gamMan.inMinigame = false;
         //Debug.Log("ah meu");
     }
 }

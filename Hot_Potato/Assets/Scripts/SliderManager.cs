@@ -47,6 +47,9 @@ public class SliderManager : MonoBehaviour
 	{
 		VaieVolta();
 
+		
+		
+
 		if (chamou)
 		{
 			if (chamou1)
@@ -87,6 +90,11 @@ public class SliderManager : MonoBehaviour
 
 					ligarCoisinhas.value = 0;
 					gamMan.jogoComecou = true;
+					gamMan.inMinigame = false;
+					gamMan.luzCozinha = false;
+					gamMan.luzSala = false;
+					gamMan.fogoCozinha = false;
+					gamMan.fogoSala = false;
 				}
 				else
 				{
@@ -155,6 +163,7 @@ public class SliderManager : MonoBehaviour
 			ligarCoisinhas.value = 0;
 
 			gamMan.jogoComecou = false;
+			gamMan.inMinigame = true;
 		}
 		
 	}
