@@ -10,11 +10,20 @@ public class SmashTheButton : MonoBehaviour
 	public Slider hitThatButton;
 	public TextMeshProUGUI dale;
 
+	private GameObject slider;
+
+	private void Start()
+	{
+		slider = GameObject.FindGameObjectWithTag("GameController");
+	}
+
 	// Update is called once per frame
 	void Update()
 	{
 		if (hitThatButton.value < 0)
+		{
 			hitThatButton.value = 0;
+		}
 
 		if (hitThatButton.value >= 0)
 		{
@@ -24,7 +33,8 @@ public class SmashTheButton : MonoBehaviour
 		if (hitThatButton.value >= 0.9)
 		{
 			hitThatButton.value = 1;
-			dale.text = "DALE";
+
+			slider.GetComponent<SliderManager>().AcertouBotao();
 		}
 	}
 

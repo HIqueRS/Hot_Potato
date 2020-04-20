@@ -34,8 +34,8 @@ public class CallForMinigame : MonoBehaviour
 					gManager.GetComponent<SliderManager>().ChamaMiniGame(0, 0);
 				}
                     //call aqui
-                    Debug.Log("aaa");
-               
+                Debug.Log("aaa");
+                
             }
             else if (gameObject.tag == "FogoCozinha")
             {
@@ -44,7 +44,7 @@ public class CallForMinigame : MonoBehaviour
 					gManager.GetComponent<SliderManager>().ChamaMiniGame(1, 1);
 				}
                     //call aqui
-                    Debug.Log("aaa");
+                Debug.Log("aaa");
                 
             }
             else if (gameObject.tag == "FogoSala")
@@ -54,13 +54,9 @@ public class CallForMinigame : MonoBehaviour
 					gManager.GetComponent<SliderManager>().ChamaMiniGame(1, 0);
 				}
                     //call aqui
-                    Debug.Log("aaa");
-               
+                Debug.Log("aaa");
+                
             }
         }
-    }
-
-	
-
-  
+    } 
 }
