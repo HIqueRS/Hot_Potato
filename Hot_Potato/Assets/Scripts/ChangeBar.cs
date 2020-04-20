@@ -75,6 +75,8 @@ public class ChangeBar : MonoBehaviour
     void Update()
     {
 
+		game.iniciou = iniciou;
+
 		if (iluzinha[sala].intensity > 0)
 		{
 			MudaLuzEBarra(sala);
