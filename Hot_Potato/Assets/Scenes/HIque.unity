@@ -668,9 +668,10 @@ GameObject:
   - component: {fileID: 254522348}
   - component: {fileID: 254522347}
   - component: {fileID: 254522346}
+  - component: {fileID: 254522352}
   m_Layer: 0
   m_Name: Potato
-  m_TagString: Untagged
+  m_TagString: Potato
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -787,6 +788,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &254522352
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254522345}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &286187263
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +816,6 @@ GameObject:
   - component: {fileID: 286187266}
   - component: {fileID: 286187265}
   - component: {fileID: 286187264}
-  - component: {fileID: 286187268}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -888,19 +904,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.058, y: -0.121}
   m_SizeDelta: {x: 525.439, y: 149.238}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &286187268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286187263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03694da5547b8fa4d854532fb0bf869f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 963194227}
 --- !u!1 &298969332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,7 +2512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
+  m_ShowCameraFrustum: 0
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
@@ -3092,7 +3095,6 @@ GameObject:
   - component: {fileID: 1239466178}
   - component: {fileID: 1239466177}
   - component: {fileID: 1239466176}
-  - component: {fileID: 1239466179}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3181,19 +3183,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1239466179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1239466174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03694da5547b8fa4d854532fb0bf869f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 963194227}
 --- !u!1 &1291465177
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,7 +3418,6 @@ GameObject:
   - component: {fileID: 1465374983}
   - component: {fileID: 1465374986}
   - component: {fileID: 1465374985}
-  - component: {fileID: 1465374987}
   - component: {fileID: 1465374984}
   m_Layer: 5
   m_Name: Canvas
@@ -3519,19 +3507,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1465374987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465374982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03694da5547b8fa4d854532fb0bf869f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 168422487}
 --- !u!1 &1538377798
 GameObject:
   m_ObjectHideFlags: 0
@@ -3609,7 +3584,7 @@ GameObject:
   - component: {fileID: 1558086799}
   m_Layer: 0
   m_Name: Fireplace
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3711,7 +3686,7 @@ GameObject:
   - component: {fileID: 1635524437}
   m_Layer: 0
   m_Name: LAMPADA FOGO
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3887,7 +3862,6 @@ GameObject:
   - component: {fileID: 1663371836}
   - component: {fileID: 1663371835}
   - component: {fileID: 1663371834}
-  - component: {fileID: 1663371837}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -3976,19 +3950,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1663371837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663371832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03694da5547b8fa4d854532fb0bf869f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 963194227}
 --- !u!1 &1690220405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4854,7 +4815,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2106139571
 Transform:
   m_ObjectHideFlags: 0
@@ -5365,7 +5326,7 @@ GameObject:
   - component: {fileID: 6227085542254828184}
   m_Layer: 0
   m_Name: FOGAO MADEIRA
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6040,13 +6001,54 @@ GameObject:
   - component: {fileID: 67628553771811378}
   - component: {fileID: 5965527360438120987}
   - component: {fileID: 7252302566408313727}
+  - component: {fileID: 7352125966006953781}
+  - component: {fileID: 7352125966006953780}
+  - component: {fileID: 7352125966006953779}
   m_Layer: 0
   m_Name: LAMPADA FOGO
-  m_TagString: Untagged
+  m_TagString: LuzCozinha
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!65 &7352125966006953779
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7352125966006953778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.34144425, y: 0.33930847, z: 0.5565194}
+  m_Center: {x: 0.0114794, y: -0.0028796277, z: -0.0552119}
+--- !u!65 &7352125966006953780
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7352125966006953778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7404318, y: 0.7434479, z: 0.5565194}
+  m_Center: {x: 0.21097286, y: 0.19918989, z: -0.05521189}
+--- !u!114 &7352125966006953781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7352125966006953778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41e08a86969d3c4e9b9420e2f38d129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7452431008186471175
 Transform:
   m_ObjectHideFlags: 0

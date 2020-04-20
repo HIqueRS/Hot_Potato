@@ -30,6 +30,43 @@ public class MovePotato : MonoBehaviour
                 if(Physics.Raycast(ray,out hit))
                 {
                     agent.SetDestination(hit.point);
+
+                    Debug.Log(hit.transform.gameObject.name);
+                    if (hit.transform.gameObject.tag == "LuzCozinha")
+                    {
+                        man.luzCozinha = true;
+                        man.luzSala = false;
+                        man.fogoCozinha = false;
+                        man.fogoSala = false;
+                    }
+                    else if(hit.transform.gameObject.tag == "LuzSala")
+                    {
+                        man.luzCozinha = false;
+                        man.luzSala = true;
+                        man.fogoCozinha = false;
+                        man.fogoSala = false;
+                    }
+                    else if (hit.transform.gameObject.tag == "FogoCozinha")
+                    {
+                        man.luzCozinha = false;
+                        man.luzSala = false;
+                        man.fogoCozinha = true;
+                        man.fogoSala = false;
+                    }
+                    else if (hit.transform.gameObject.tag == "FogoSala")
+                    {
+                        man.luzCozinha = false;
+                        man.luzSala = false;
+                        man.fogoCozinha = false;
+                        man.fogoSala = true;
+                    }
+                    else
+                    {
+                        man.luzCozinha = false;
+                        man.luzSala = false;
+                        man.fogoCozinha = false;
+                        man.fogoSala = false;
+                    }
                 }
             }
         }

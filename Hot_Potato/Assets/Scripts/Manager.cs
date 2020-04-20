@@ -17,6 +17,11 @@ public class Manager : MonoBehaviour
         camMan.camsPriority[1] = 15;
         camMan.camsPriority[2] = 10;
         camMan.camsPriority[3] = 10;
+
+        gamMan.fogoSala = false;
+        gamMan.luzSala = false;
+        gamMan.luzCozinha = false;
+        gamMan.fogoCozinha = false;
         //Debug.Log("ah meu");
     }
 }

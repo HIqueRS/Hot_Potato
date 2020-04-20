@@ -11,6 +11,11 @@ public class GameManager : ScriptableObject
 
     public bool jogoComecou;
 
+    public bool luzCozinha;
+    public bool luzSala;
+    public bool fogoSala;
+    public bool fogoCozinha;
+
     public void Comecar(bool comecou)
     {
         jogoComecou = comecou;

@@ -20,3 +20,7 @@ MonoBehaviour:
   - 0.42066377
   iniciou: 0
   jogoComecou: 1
+  luzCozinha: 0
+  luzSala: 0
+  fogoSala: 0
+  fogoCozinha: 0

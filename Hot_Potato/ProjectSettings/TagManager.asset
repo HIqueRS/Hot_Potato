@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Lamps
+  - Interactable
+  - LuzSala
+  - LuzCozinha
+  - FogoSala
+  - FogoCozinha
+  - Potato
   layers:
   - Default
   - TransparentFX
