@@ -17,7 +17,7 @@ public class ChangeBar : MonoBehaviour
 	private float[] maxIntensityFogo;
 	private GameObject manager;
 	public float decreaseLuz;
-	private float decreaseFogo;
+	public float decreaseFogo;
 	private bool[] taLigadaLuz;
 	private bool[] taLigadoFogo;
 	private static readonly int sala = 0;
@@ -29,6 +29,7 @@ public class ChangeBar : MonoBehaviour
 	private bool fogaoAceso = false;
 
 	private bool ligouCozinha = false;
+	private bool tutorial = true;
 
 	// Start is called before the first frame update
 	void Start()
@@ -77,19 +78,23 @@ public class ChangeBar : MonoBehaviour
 		if (fogaoAceso && lareiraAcesa)
 		{
 			iniciou = true;
+			tutorial = false;
+		}
+		else
+		{
+			tutorial = true;
 		}
 
 		game.iniciou = iniciou;
 
-		if(iniciou)
+		if (tutorial)
 		{
-
-
-			MudaIntensidadeLuz();
-
-
+			Tutorial(false);
 		}
+
+
 		MudaIntensidadeLuz();
+
 
 		TestaIntensityLuzes();
 
@@ -101,10 +106,11 @@ public class ChangeBar : MonoBehaviour
 	{
 		if (iluzinha[sala].intensity > 0)
 		{
+			if (!tutorial)
 			MudaLuzEBarra(sala);
 		}
 
-		if (iluzinha[cozinha].intensity > 0)
+		if (iluzinha[cozinha].intensity > 0 )
 		{
 			MudaLuzEBarra(cozinha);
 		}
@@ -140,6 +146,7 @@ public class ChangeBar : MonoBehaviour
 			{
 				lareiraAcesa = true;
 			}
+			imageFogo[sala].fillAmount = fogo[sala].intensity / maxIntensityFogo[sala];
 		}
 
 		if (fogo[cozinha].intensity > 0)
@@ -148,6 +155,7 @@ public class ChangeBar : MonoBehaviour
 			{
 				fogaoAceso = true;
 			}
+			imageFogo[cozinha].fillAmount = fogo[cozinha].intensity / maxIntensityFogo[cozinha];
 		}
 	}
 
@@ -165,9 +173,16 @@ public class ChangeBar : MonoBehaviour
 
 				taLigadaLuz[sala] = false;
 			}
-			else if (iniciou && ligouCozinha)
+			else if (!iniciou)
 			{
-				bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, 0);
+				if (!ligouCozinha)
+				{
+					bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, 0);
+				}
+				else
+				{
+					Tutorial(ligouCozinha);
+				}
 			}
 			
 			
@@ -197,6 +212,11 @@ public class ChangeBar : MonoBehaviour
 			diminuiAlfabg[cozinha] = diminuiAlfaim[cozinha] = 1;
 
 			taLigadaLuz[cozinha] = true;
+
+			if (!iniciou)
+			{
+				ligouCozinha = true;
+			}
 		}
 	}
 
@@ -217,5 +237,28 @@ public class ChangeBar : MonoBehaviour
 		}
 
 		return diminuiAlfaim[comodo];
+	}
+
+	void Tutorial(bool luzCoz)
+	{
+
+		if (luzCoz)
+		{
+			bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, 1);
+			game.intensityLuz[cozinha] = imageLuz[cozinha].fillAmount = 1;
+		}
+		if (fogaoAceso)
+		{
+			game.intensityFogo[cozinha] = imageFogo[cozinha].fillAmount = 1;
+		}
+		if (lareiraAcesa)
+		{
+			game.intensityFogo[sala] = imageFogo[sala].fillAmount = fogo[sala].intensity / maxIntensityFogo[sala];
+		}
+		
+		
+
+		game.intensityLuz[sala] = imageLuz[sala].fillAmount = 1;
+		
 	}
 }
