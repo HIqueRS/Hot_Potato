@@ -108,7 +108,12 @@ ModelImporter:
   - first:
       74: -6691534708367430244
     second: FOGO PORTA.001|PORTAAction.003
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRANCO.001
+    second: {fileID: 2100000, guid: eabb2756cc1d9ae40b18edfbb26caa72, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

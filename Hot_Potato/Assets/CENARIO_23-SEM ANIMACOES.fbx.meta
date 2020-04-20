@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 1eb734a88b18388439b90006ed147023
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: -3287827117233156830
+    second: PLANTA COZINHA|BATATINHA BRACOSAction.006
+  - first:
+      74: -7001198065822961395
+    second: PLANTA COZINHA|BATATINHA BRACOSAction.007
+  - first:
+      74: -2253098367691208949
+    second: PLANTA COZINHA|BATATINHA BRACOSAction.008
+  - first:
+      74: 1095431959580105554
+    second: PLANTA COZINHA|BATATINHA PERNASAction.006
+  - first:
+      74: -1397528308663839284
+    second: PLANTA COZINHA|BATATINHA PERNASAction.007
+  - first:
+      74: 6212245251345380771
+    second: PLANTA COZINHA|BATATINHA PERNASAction.008
+  - first:
+      74: 1040850342360040604
+    second: PLANTA COZINHA|BATATINHAAction.001
+  - first:
+      74: 2356891877524564077
+    second: PLANTA COZINHA|FOGAO FOGOAction.001
+  - first:
+      74: -2664293114601643401
+    second: PLANTA COZINHA|JANELA.001Action.000
+  - first:
+      74: -287069058442314225
+    second: PLANTA COZINHA|JANELAAction.002
+  - first:
+      74: -1658971734133351773
+    second: PLANTA COZINHA|JANELAAction.003
+  - first:
+      74: -3262115733064916861
+    second: PLANTA COZINHA|LAMPADA FOGO 1Action.000
+  - first:
+      74: -8136440878517160221
+    second: PLANTA COZINHA|LAMPADA FOGO 2Action.001
+  - first:
+      74: -1224212384846942447
+    second: PLANTA COZINHA|LAREIRA FOGOAction.000
+  - first:
+      74: 9146796687242789889
+    second: PLANTA COZINHA|PANELA CENOURASAction.000
+  - first:
+      74: 4656684135123482414
+    second: PLANTA COZINHA|PORTAAction.002
+  - first:
+      74: -931064251185683270
+    second: PLANTA COZINHA|PORTAAction.003
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AMARELO
+    second: {fileID: 2100000, guid: 4f487241267b30a4a9a864328a87084d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AZUL MEIO
+    second: {fileID: 2100000, guid: 321ddc98351945c40aa4d6406d37269d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AZUL MEIO.001
+    second: {fileID: 2100000, guid: 321ddc98351945c40aa4d6406d37269d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BATATA.000
+    second: {fileID: 2100000, guid: 1b072c23086194849bbc1f9b814586e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BEGE CERTO
+    second: {fileID: 2100000, guid: 007c7e5ea323ba941924a91c6ad14abc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LARANJA .003
+    second: {fileID: 2100000, guid: 40c50a2e6a31db6429bec340fc51ff58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LARANJA_
+    second: {fileID: 2100000, guid: 40c50a2e6a31db6429bec340fc51ff58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM CINZA
+    second: {fileID: 2100000, guid: 26d6333dcbd11534ca3bd71196448a08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM CINZA.001
+    second: {fileID: 2100000, guid: 26d6333dcbd11534ca3bd71196448a08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM ESCURO
+    second: {fileID: 2100000, guid: 3d9fa392684eade4bac61edef3c3a20a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM MADEIRA
+    second: {fileID: 2100000, guid: 16541f0a863573a4a93f1ca1f4a683b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM MEL
+    second: {fileID: 2100000, guid: a22de77b187fec241a2572d1ed4483ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM intermediario.001
+    second: {fileID: 2100000, guid: 243ce2332a60e644da6be750e03ee40f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MEL CLARO
+    second: {fileID: 2100000, guid: 3ced162b05b87ae42952f624eeb32bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NEVE
+    second: {fileID: 2100000, guid: b4e40144bcd62e04cb4fc81ee10abf0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse.001
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse.003
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERMELHO
+    second: {fileID: 2100000, guid: eb4ab33e2203f584d8e0532220e11f29, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

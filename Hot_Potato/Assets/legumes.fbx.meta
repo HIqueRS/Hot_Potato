@@ -108,7 +108,17 @@ ModelImporter:
   - first:
       74: 6280342766144424944
     second: PANELA CENOURAS.001|PORTAAction.003
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LARANJA .001
+    second: {fileID: 2100000, guid: 40c50a2e6a31db6429bec340fc51ff58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse.001
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

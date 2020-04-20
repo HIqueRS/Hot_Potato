@@ -111,7 +111,17 @@ ModelImporter:
   - first:
       74: 3650566742264068152
     second: JANELA.003|PORTAAction.003
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AZUL MEIO.001
+    second: {fileID: 2100000, guid: 321ddc98351945c40aa4d6406d37269d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM ESCURO.001
+    second: {fileID: 2100000, guid: 3d9fa392684eade4bac61edef3c3a20a, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

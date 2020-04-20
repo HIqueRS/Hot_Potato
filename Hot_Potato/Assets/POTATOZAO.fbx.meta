@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: be6bc621e2555dd4cb5bdad35121b81a
+guid: a918f7190b6ae844380cd2de464ac673
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,22 +7,22 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BATATA.002
+      name: BATATA.003
     second: {fileID: 2100000, guid: 1b072c23086194849bbc1f9b814586e6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: LARANJA .002
+      name: LARANJA .005
     second: {fileID: 2100000, guid: 40c50a2e6a31db6429bec340fc51ff58, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MARROM CINZA.002
+      name: MARROM CINZA.004
     second: {fileID: 2100000, guid: 26d6333dcbd11534ca3bd71196448a08, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: VERDE eh esse.002
+      name: VERDE eh esse.005
     second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
   materials:
     materialImportMode: 1
