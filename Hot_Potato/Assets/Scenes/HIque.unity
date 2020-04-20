@@ -711,6 +711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194227}
   agent: {fileID: 254522346}
+  man: {fileID: 0}
 --- !u!136 &254522348
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1996,6 +1997,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &775759652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 71116206654853702, guid: c61de7de0073f4a40a847343ae1742b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 71116207380580531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &775759656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775759652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a3786cb5ba3c143ad45597ceb8c3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &867087108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,8 +2476,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.15298353, y: 0.30535915, z: -0.048344053, w: 0.9386239}
-  m_LocalPosition: {x: 3.4499993, y: 2.0899997, z: -4.659999}
+  m_LocalRotation: {x: 0, y: -0.92352265, z: 0, w: 0.38354394}
+  m_LocalPosition: {x: 8.112001, y: 2.0343943, z: 6.363434}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4145,10 +4164,32 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 222503089}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 25212ca0b6ab81a41959c00c44240a3c, type: 2}
+        m_MethodName: Comecar
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1810854985
 MonoBehaviour:
@@ -4874,7 +4915,8 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_ShowDebugText: 0
-  m_ChildCameras: []
+  m_ChildCameras:
+  - {fileID: 1916073666}
   m_ActivateAfter: 0
   m_MinDuration: 0
   m_RandomizeChoice: 0

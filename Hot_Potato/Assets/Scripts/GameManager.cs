@@ -7,6 +7,12 @@ public class GameManager : ScriptableObject
 {
     public float[] intensityLuz;
 	public float[] intensityFogo;
-	public bool iniciou;
-  
+	public bool iniciou;//trocar pra tutorial
+
+    public bool jogoComecou;
+
+    public void Comecar(bool comecou)
+    {
+        jogoComecou = comecou;
+    }
 }
