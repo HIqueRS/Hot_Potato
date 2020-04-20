@@ -81,7 +81,7 @@ public class SliderManager : MonoBehaviour
 					}
 					if (tipo == 1)
 					{
-						gManager.GetComponent<ChangeBar>().fogo[lugar].intensity = 1.3f;
+						gManager.GetComponent<ChangeBar>().fogo[lugar].intensity = 1.6f;
 
 						painel.SetActive(false);
 

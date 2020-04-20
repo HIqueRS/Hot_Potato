@@ -13,7 +13,8 @@ public class EndGame : MonoBehaviour
 	private float delay;
 	public float min;
 	public float max;
-	public Animator animator;
+	public Animator leftWindow;
+	public Animator rightWindow;
 
 	//public Animation
 	
@@ -80,7 +81,8 @@ public class EndGame : MonoBehaviour
 			{
 				//changeBar.function(Random.Range(0, 1));
 				//call a animacao
-				animator.SetTrigger("teste");
+				leftWindow.SetTrigger("teste");
+				rightWindow.SetTrigger("Open");
 				Debug.Log("ue");
 				delayWind = Random.Range(min, max);
 				delay = 0;
