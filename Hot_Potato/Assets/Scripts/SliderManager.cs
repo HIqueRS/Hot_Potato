@@ -15,10 +15,18 @@ public class SliderManager : MonoBehaviour
 	private float posAreaCerta;
 	[Tooltip("em float, 1 ja fica consideravelmente rapido")]
 	public float velSlider;
+	private GameObject gManager;
+	public GameObject painel;
+	public GameObject painelErro;
+	public Image painelErrou;
+
+	private int lugar, tipo;
+	private bool errou = false;
+	private float piscaPisca;
 
 
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
 		aumentando = true;
 
@@ -28,6 +36,8 @@ public class SliderManager : MonoBehaviour
 		posAreaCerta = minimo * tamanhoSlider;
 
 		areaCerta.rectTransform.Translate(new Vector3(posAreaCerta, 0, 0));
+
+		gManager = GameObject.FindGameObjectWithTag("GameController");
 	}
 
 	// Update is called once per frame
@@ -38,10 +48,31 @@ public class SliderManager : MonoBehaviour
 		{
 			if (ligarCoisinhas.value >= minimo && ligarCoisinhas.value <= maximo)
 			{
+				if (tipo == 0)
+				{
+					gManager.GetComponent<ChangeBar>().iluzinha[lugar].intensity = 2;
 
+					painel.SetActive(false);
+				}
+				if (tipo == 1)
+				{
+					gManager.GetComponent<ChangeBar>().fogo[lugar].intensity = 2;
+
+					painel.SetActive(false);
+				}
+			}
+			else
+			{
+				errou = true;
+
+				painelErro.SetActive(true);
 			}
 		}
 
+		if (errou)
+		{
+			PiscaPanel();
+		}
 	}
 
 	void VaieVolta()
@@ -63,5 +94,27 @@ public class SliderManager : MonoBehaviour
 		{
 			aumentando = true;
 		}
+	}
+
+	public void ChamaMiniGame(int oQue, int onde)
+	{
+		painel.SetActive(true);
+
+		tipo = oQue;
+		lugar = onde;
+	}
+
+	void PiscaPanel()
+	{
+		if (piscaPisca > 0.3f)
+		{
+			piscaPisca -= 0.05f * Time.deltaTime;
+		}
+		else
+		{
+			piscaPisca += 0.05f * Time.deltaTime;
+		}
+		
+		painelErrou.color = new Color(painelErrou.color.r, painelErrou.color.g, painelErrou.color.b, piscaPisca);
 	}
 }

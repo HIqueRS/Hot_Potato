@@ -25,8 +25,8 @@ public class ChangeBar : MonoBehaviour
 	private float[] diminuiAlfabg;
 	private float[] diminuiAlfaim;
 	private bool iniciou = false;
-
-	
+	private bool lareiraAcesa = false;
+	private bool fogaoAceso = false;
 
 	// Start is called before the first frame update
 	void Start()
@@ -70,14 +70,27 @@ public class ChangeBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		if (fogaoAceso && lareiraAcesa)
+		{
+			iniciou = true;
+		}
 
 		game.iniciou = iniciou;
 
+		MudaIntensidadeLuz();
+
+		TestaIntensityLuzes();
+
+		TestaIntensityFogo();
+	}
+
+	void MudaIntensidadeLuz()
+	{
 		if (iluzinha[sala].intensity > 0)
 		{
 			MudaLuzEBarra(sala);
 		}
-		
+
 		if (iluzinha[cozinha].intensity > 0)
 		{
 			MudaLuzEBarra(cozinha);
@@ -92,8 +105,6 @@ public class ChangeBar : MonoBehaviour
 		{
 			MudaFogoEBarra(cozinha);
 		}
-
-		TestaIntensityLuzes();
 	}
 
 	void MudaLuzEBarra(int num)
@@ -101,10 +112,30 @@ public class ChangeBar : MonoBehaviour
 		iluzinha[num].intensity -= decreaseLuz * Time.deltaTime;
 		game.intensityLuz[num] = imageLuz[num].fillAmount = iluzinha[num].intensity / maxIntensityLuz[num];
 	}
+
 	void MudaFogoEBarra(int num)
 	{
         fogo[num].intensity -= decreaseFogo * Time.deltaTime;
         game.intensityFogo[num] = imageFogo[num].fillAmount = fogo[num].intensity/ maxIntensityFogo[num];
+	}
+
+	void TestaIntensityFogo()
+	{
+		if (fogo[sala].intensity > 0)
+		{
+			if (!iniciou)
+			{
+				lareiraAcesa = true;
+			}
+		}
+
+		if (fogo[cozinha].intensity > 0)
+		{
+			if (!iniciou)
+			{
+				fogaoAceso = true;
+			}
+		}
 	}
 
 	void TestaIntensityLuzes()
@@ -155,6 +186,7 @@ public class ChangeBar : MonoBehaviour
 			taLigadaLuz[cozinha] = true;
 		}
 	}
+
 	float DiminuiAlfaBG(int comodo)
 	{
 		
@@ -163,6 +195,7 @@ public class ChangeBar : MonoBehaviour
 
 		return diminuiAlfabg[comodo];
 	}
+
 	float DiminuiAlfaIM(int comodo)
 	{
 		if (diminuiAlfaim[comodo] > 0)
