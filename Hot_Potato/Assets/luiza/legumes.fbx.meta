@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 94b65ade7da744d49b6ecbf3f3e8f4c6
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: -2085992035243514952
+    second: COMIDA GIRANDO
+  - first:
+      74: 8664925367323080356
+    second: PANELA CENOURAS.001|BATATINHA BRACOSAction.000
+  - first:
+      74: -2940199380597446044
+    second: PANELA CENOURAS.001|BATATINHA BRACOSAction.001
+  - first:
+      74: -8346626374157386776
+    second: PANELA CENOURAS.001|BATATINHA BRACOSAction.002
+  - first:
+      74: 4839389635901080190
+    second: PANELA CENOURAS.001|BATATINHA BRACOSAction.003
+  - first:
+      74: -5244908859467929498
+    second: PANELA CENOURAS.001|BATATINHA BRACOSAction.004
+  - first:
+      74: -8641344627788480146
+    second: PANELA CENOURAS.001|BATATINHA BRACOSAction.005
+  - first:
+      74: 7730320580851351827
+    second: PANELA CENOURAS.001|BATATINHA PERNASAction.000
+  - first:
+      74: -4801171557422865096
+    second: PANELA CENOURAS.001|BATATINHA PERNASAction.001
+  - first:
+      74: 7924593413884913312
+    second: PANELA CENOURAS.001|BATATINHA PERNASAction.002
+  - first:
+      74: -5439928441043153091
+    second: PANELA CENOURAS.001|BATATINHA PERNASAction.003
+  - first:
+      74: -9082652707517206612
+    second: PANELA CENOURAS.001|BATATINHA PERNASAction.004
+  - first:
+      74: -4604304477350454545
+    second: PANELA CENOURAS.001|BATATINHA PERNASAction.005
+  - first:
+      74: -1460241060537195472
+    second: PANELA CENOURAS.001|BATATINHAAction.000
+  - first:
+      74: -7815496988941235294
+    second: PANELA CENOURAS.001|BATATINHAAction.002
+  - first:
+      74: -8113388184012268773
+    second: PANELA CENOURAS.001|FOGAO FOGOAction
+  - first:
+      74: 3781525432178427546
+    second: PANELA CENOURAS.001|FOGAO FOGOAction.001
+  - first:
+      74: 421890901113392941
+    second: PANELA CENOURAS.001|JANELA.001Action.000
+  - first:
+      74: 5902425138989991179
+    second: PANELA CENOURAS.001|JANELA.001Action.001
+  - first:
+      74: 7916950406880202160
+    second: PANELA CENOURAS.001|JANELAAction
+  - first:
+      74: 706859463567854567
+    second: PANELA CENOURAS.001|JANELAAction.001
+  - first:
+      74: -3914361814590949787
+    second: PANELA CENOURAS.001|JANELAAction.002
+  - first:
+      74: 6104042683960613357
+    second: PANELA CENOURAS.001|JANELAAction.003
+  - first:
+      74: -2685255747955944366
+    second: PANELA CENOURAS.001|LAMPADA FOGO 1Action.000
+  - first:
+      74: 8161085066599930238
+    second: PANELA CENOURAS.001|LAMPADA FOGO 1Action.001
+  - first:
+      74: -5904718314264797590
+    second: PANELA CENOURAS.001|LAMPADA FOGO 2Action
+  - first:
+      74: -953800419489922493
+    second: PANELA CENOURAS.001|LAMPADA FOGO 2Action.001
+  - first:
+      74: 2794381658939536890
+    second: PANELA CENOURAS.001|LAREIRA FOGOAction.000
+  - first:
+      74: 905708703648224811
+    second: PANELA CENOURAS.001|LAREIRA FOGOAction.002
+  - first:
+      74: 2295292583174661117
+    second: PANELA CENOURAS.001|PANELA CENOURASAction.000
+  - first:
+      74: 5557264232856291901
+    second: PANELA CENOURAS.001|PANELA CENOURASAction.005
+  - first:
+      74: -2611260637036910967
+    second: PANELA CENOURAS.001|PORTAAction
+  - first:
+      74: 5639480097783843920
+    second: PANELA CENOURAS.001|PORTAAction.001
+  - first:
+      74: 7357512731270593648
+    second: PANELA CENOURAS.001|PORTAAction.002
+  - first:
+      74: 6280342766144424944
+    second: PANELA CENOURAS.001|PORTAAction.003
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

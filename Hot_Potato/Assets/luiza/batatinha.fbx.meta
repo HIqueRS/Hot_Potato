@@ -1,0 +1,486 @@
+fileFormatVersion: 2
+guid: b6c9766af690560459b2cc81f9911bb1
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: 5399430710557516970
+    second: WALK BRACOS COMECA
+  - first:
+      74: 7022746847920588543
+    second: WALK BRACOS ANDANDO
+  - first:
+      74: 1196282614709354764
+    second: WALK BRACOS PARA
+  - first:
+      74: -780038182833721179
+    second: WALK PERNAS COMECA
+  - first:
+      74: 612791507124438451
+    second: WALK PERNAS ANDANDO
+  - first:
+      74: -3191924127671748111
+    second: WALK PERNAS PARA
+  - first:
+      74: -1589457527571835797
+    second: IDLE RESPIRA
+  - first:
+      74: -148337022198942150
+    second: BATATINHA BRACOS.001|BATATINHA BRACOSAction.000
+  - first:
+      74: 2374238056642602616
+    second: BATATINHA BRACOS.001|BATATINHA BRACOSAction.001
+  - first:
+      74: -1628273901690591390
+    second: BATATINHA BRACOS.001|BATATINHA BRACOSAction.002
+  - first:
+      74: -4613395485706780808
+    second: BATATINHA BRACOS.001|BATATINHA BRACOSAction.003
+  - first:
+      74: -600516653724896401
+    second: BATATINHA BRACOS.001|BATATINHA BRACOSAction.004
+  - first:
+      74: -7276929962524594487
+    second: BATATINHA BRACOS.001|BATATINHA BRACOSAction.005
+  - first:
+      74: -1629168839367637355
+    second: BATATINHA BRACOS.001|BATATINHA BRACOSAction.006
+  - first:
+      74: -1018341752477915573
+    second: BATATINHA BRACOS.001|BATATINHA BRACOSAction.007
+  - first:
+      74: -8593818861771773292
+    second: BATATINHA BRACOS.001|BATATINHA BRACOSAction.008
+  - first:
+      74: -7435376342588080101
+    second: BATATINHA BRACOS.001|BATATINHA PERNASAction.000
+  - first:
+      74: -766907073400670482
+    second: BATATINHA BRACOS.001|BATATINHA PERNASAction.001
+  - first:
+      74: -7969603176893246587
+    second: BATATINHA BRACOS.001|BATATINHA PERNASAction.002
+  - first:
+      74: -8524547457116411913
+    second: BATATINHA BRACOS.001|BATATINHA PERNASAction.003
+  - first:
+      74: 7911434575286155623
+    second: BATATINHA BRACOS.001|BATATINHA PERNASAction.004
+  - first:
+      74: -8594341065416395879
+    second: BATATINHA BRACOS.001|BATATINHA PERNASAction.005
+  - first:
+      74: 4435134558763666849
+    second: BATATINHA BRACOS.001|BATATINHA PERNASAction.006
+  - first:
+      74: 4449892558729882209
+    second: BATATINHA BRACOS.001|BATATINHA PERNASAction.007
+  - first:
+      74: -4187741600204536389
+    second: BATATINHA BRACOS.001|BATATINHA PERNASAction.008
+  - first:
+      74: -2830849250825299028
+    second: BATATINHA BRACOS.001|BATATINHAAction.000
+  - first:
+      74: 2150676879270083752
+    second: BATATINHA BRACOS.001|BATATINHAAction.001
+  - first:
+      74: -2641910813585408864
+    second: BATATINHA BRACOS.001|BATATINHAAction.002
+  - first:
+      74: -309975463596924323
+    second: BATATINHA BRACOS.001|FOGAO FOGOAction
+  - first:
+      74: 1573122709136964152
+    second: BATATINHA BRACOS.001|FOGAO FOGOAction.001
+  - first:
+      74: 821965041959883983
+    second: BATATINHA BRACOS.001|JANELA.001Action.000
+  - first:
+      74: -5186733057302260324
+    second: BATATINHA BRACOS.001|JANELA.001Action.001
+  - first:
+      74: -5412506313118792831
+    second: BATATINHA BRACOS.001|JANELAAction
+  - first:
+      74: -8995322896785891679
+    second: BATATINHA BRACOS.001|JANELAAction.001
+  - first:
+      74: -309675765022474394
+    second: BATATINHA BRACOS.001|JANELAAction.002
+  - first:
+      74: -4133354886394418697
+    second: BATATINHA BRACOS.001|JANELAAction.003
+  - first:
+      74: -9154308602288340752
+    second: BATATINHA BRACOS.001|LAMPADA FOGO 1Action.000
+  - first:
+      74: -871159925449597399
+    second: BATATINHA BRACOS.001|LAMPADA FOGO 1Action.001
+  - first:
+      74: 349392296625088825
+    second: BATATINHA BRACOS.001|LAMPADA FOGO 2Action
+  - first:
+      74: 4925362615634595748
+    second: BATATINHA BRACOS.001|LAMPADA FOGO 2Action.001
+  - first:
+      74: -7146277267741382745
+    second: BATATINHA BRACOS.001|LAREIRA FOGOAction.000
+  - first:
+      74: -626398489727281036
+    second: BATATINHA BRACOS.001|LAREIRA FOGOAction.002
+  - first:
+      74: 1003731168781238078
+    second: BATATINHA BRACOS.001|PANELA CENOURASAction.000
+  - first:
+      74: -6722806586447960191
+    second: BATATINHA BRACOS.001|PANELA CENOURASAction.005
+  - first:
+      74: -1012762136425087936
+    second: BATATINHA BRACOS.001|PORTAAction
+  - first:
+      74: 8029278627382727710
+    second: BATATINHA BRACOS.001|PORTAAction.001
+  - first:
+      74: -5334196609560767577
+    second: BATATINHA BRACOS.001|PORTAAction.002
+  - first:
+      74: 6143202905690399081
+    second: BATATINHA BRACOS.001|PORTAAction.003
+  - first:
+      74: -4160427784999967189
+    second: BATATINHA PERNAS.001|BATATINHA BRACOSAction.000
+  - first:
+      74: 5915381820696141000
+    second: BATATINHA PERNAS.001|BATATINHA BRACOSAction.001
+  - first:
+      74: 5190139609937570613
+    second: BATATINHA PERNAS.001|BATATINHA BRACOSAction.002
+  - first:
+      74: 4937181549786339888
+    second: BATATINHA PERNAS.001|BATATINHA BRACOSAction.003
+  - first:
+      74: -4392670734177508914
+    second: BATATINHA PERNAS.001|BATATINHA BRACOSAction.004
+  - first:
+      74: 7848689514168390233
+    second: BATATINHA PERNAS.001|BATATINHA BRACOSAction.005
+  - first:
+      74: -5315525544435336938
+    second: BATATINHA PERNAS.001|BATATINHA BRACOSAction.006
+  - first:
+      74: 6612193161831043620
+    second: BATATINHA PERNAS.001|BATATINHA BRACOSAction.007
+  - first:
+      74: -4048566135436238505
+    second: BATATINHA PERNAS.001|BATATINHA BRACOSAction.008
+  - first:
+      74: -793840057698833091
+    second: BATATINHA PERNAS.001|BATATINHA PERNASAction.000
+  - first:
+      74: -1055284183200470528
+    second: BATATINHA PERNAS.001|BATATINHA PERNASAction.001
+  - first:
+      74: 3540406724409110023
+    second: BATATINHA PERNAS.001|BATATINHA PERNASAction.002
+  - first:
+      74: 5257549288175513589
+    second: BATATINHA PERNAS.001|BATATINHA PERNASAction.003
+  - first:
+      74: -2393348795669137450
+    second: BATATINHA PERNAS.001|BATATINHA PERNASAction.004
+  - first:
+      74: 2427129358644206305
+    second: BATATINHA PERNAS.001|BATATINHA PERNASAction.005
+  - first:
+      74: -2764772739773034530
+    second: BATATINHA PERNAS.001|BATATINHA PERNASAction.006
+  - first:
+      74: 6277890374807988012
+    second: BATATINHA PERNAS.001|BATATINHA PERNASAction.007
+  - first:
+      74: 268347838003134155
+    second: BATATINHA PERNAS.001|BATATINHA PERNASAction.008
+  - first:
+      74: -7615533220950807911
+    second: BATATINHA PERNAS.001|BATATINHAAction.000
+  - first:
+      74: -4068398767854400240
+    second: BATATINHA PERNAS.001|BATATINHAAction.001
+  - first:
+      74: 2547341579888279446
+    second: BATATINHA PERNAS.001|BATATINHAAction.002
+  - first:
+      74: 7833555887581408190
+    second: BATATINHA PERNAS.001|FOGAO FOGOAction
+  - first:
+      74: -2865366199633491369
+    second: BATATINHA PERNAS.001|FOGAO FOGOAction.001
+  - first:
+      74: -3198037149423358943
+    second: BATATINHA PERNAS.001|JANELA.001Action.000
+  - first:
+      74: -4708372084069958970
+    second: BATATINHA PERNAS.001|JANELA.001Action.001
+  - first:
+      74: 7694976133412609233
+    second: BATATINHA PERNAS.001|JANELAAction
+  - first:
+      74: -903843585856823004
+    second: BATATINHA PERNAS.001|JANELAAction.001
+  - first:
+      74: -7091327251331237108
+    second: BATATINHA PERNAS.001|JANELAAction.002
+  - first:
+      74: -2988365808474915001
+    second: BATATINHA PERNAS.001|JANELAAction.003
+  - first:
+      74: -1031725025632705729
+    second: BATATINHA PERNAS.001|LAMPADA FOGO 1Action.000
+  - first:
+      74: -6060558749690994371
+    second: BATATINHA PERNAS.001|LAMPADA FOGO 1Action.001
+  - first:
+      74: 6394481805316683560
+    second: BATATINHA PERNAS.001|LAMPADA FOGO 2Action
+  - first:
+      74: -5957509243444263333
+    second: BATATINHA PERNAS.001|LAMPADA FOGO 2Action.001
+  - first:
+      74: -4273497593229093475
+    second: BATATINHA PERNAS.001|LAREIRA FOGOAction.000
+  - first:
+      74: -2265531570564785962
+    second: BATATINHA PERNAS.001|LAREIRA FOGOAction.002
+  - first:
+      74: 2390717655735321692
+    second: BATATINHA PERNAS.001|PANELA CENOURASAction.000
+  - first:
+      74: 2569699863820569834
+    second: BATATINHA PERNAS.001|PANELA CENOURASAction.005
+  - first:
+      74: 1117125473180619508
+    second: BATATINHA PERNAS.001|PORTAAction
+  - first:
+      74: 787699781319191995
+    second: BATATINHA PERNAS.001|PORTAAction.001
+  - first:
+      74: 6277455255773746361
+    second: BATATINHA PERNAS.001|PORTAAction.002
+  - first:
+      74: 8004764751079289738
+    second: BATATINHA PERNAS.001|PORTAAction.003
+  - first:
+      74: -2968679030514253485
+    second: BATATINHA.001|BATATINHA BRACOSAction.000
+  - first:
+      74: 5253590013371664675
+    second: BATATINHA.001|BATATINHA BRACOSAction.001
+  - first:
+      74: -2892743426432134847
+    second: BATATINHA.001|BATATINHA BRACOSAction.002
+  - first:
+      74: -3794406320704998214
+    second: BATATINHA.001|BATATINHA BRACOSAction.003
+  - first:
+      74: -4652214369267633482
+    second: BATATINHA.001|BATATINHA BRACOSAction.004
+  - first:
+      74: 2954156958528828994
+    second: BATATINHA.001|BATATINHA BRACOSAction.005
+  - first:
+      74: -265070905733599868
+    second: BATATINHA.001|BATATINHA BRACOSAction.006
+  - first:
+      74: 154381064827213153
+    second: BATATINHA.001|BATATINHA BRACOSAction.007
+  - first:
+      74: 4887801341031513454
+    second: BATATINHA.001|BATATINHA BRACOSAction.008
+  - first:
+      74: -7540414124716623224
+    second: BATATINHA.001|BATATINHA PERNASAction.000
+  - first:
+      74: -4564138481422660437
+    second: BATATINHA.001|BATATINHA PERNASAction.001
+  - first:
+      74: -3124545485441564908
+    second: BATATINHA.001|BATATINHA PERNASAction.002
+  - first:
+      74: 7046347613829961807
+    second: BATATINHA.001|BATATINHA PERNASAction.003
+  - first:
+      74: -7295756212597890158
+    second: BATATINHA.001|BATATINHA PERNASAction.004
+  - first:
+      74: -2059183560874438542
+    second: BATATINHA.001|BATATINHA PERNASAction.005
+  - first:
+      74: -8379325879445723767
+    second: BATATINHA.001|BATATINHA PERNASAction.006
+  - first:
+      74: 6783877746672196914
+    second: BATATINHA.001|BATATINHA PERNASAction.007
+  - first:
+      74: -683123709781293741
+    second: BATATINHA.001|BATATINHA PERNASAction.008
+  - first:
+      74: 3714806816542806773
+    second: BATATINHA.001|BATATINHAAction.000
+  - first:
+      74: 5077832793419653961
+    second: BATATINHA.001|BATATINHAAction.001
+  - first:
+      74: 793059340830762974
+    second: BATATINHA.001|BATATINHAAction.002
+  - first:
+      74: -7180179364884269538
+    second: BATATINHA.001|FOGAO FOGOAction
+  - first:
+      74: -8855791730612783629
+    second: BATATINHA.001|FOGAO FOGOAction.001
+  - first:
+      74: -3207934141897246940
+    second: BATATINHA.001|JANELA.001Action.000
+  - first:
+      74: -5028873118279167915
+    second: BATATINHA.001|JANELA.001Action.001
+  - first:
+      74: 7999370697760753413
+    second: BATATINHA.001|JANELAAction
+  - first:
+      74: -4125947079609256480
+    second: BATATINHA.001|JANELAAction.001
+  - first:
+      74: -1564791690541643863
+    second: BATATINHA.001|JANELAAction.002
+  - first:
+      74: 6209054775388739339
+    second: BATATINHA.001|JANELAAction.003
+  - first:
+      74: -3384131005937517502
+    second: BATATINHA.001|LAMPADA FOGO 1Action.000
+  - first:
+      74: 4092566239181875719
+    second: BATATINHA.001|LAMPADA FOGO 1Action.001
+  - first:
+      74: -7480522032678829574
+    second: BATATINHA.001|LAMPADA FOGO 2Action
+  - first:
+      74: -294086612629807064
+    second: BATATINHA.001|LAMPADA FOGO 2Action.001
+  - first:
+      74: 5428446158873228774
+    second: BATATINHA.001|LAREIRA FOGOAction.000
+  - first:
+      74: -9102935837733700660
+    second: BATATINHA.001|LAREIRA FOGOAction.002
+  - first:
+      74: 8985136745965313860
+    second: BATATINHA.001|PANELA CENOURASAction.000
+  - first:
+      74: 6624661174625654994
+    second: BATATINHA.001|PANELA CENOURASAction.005
+  - first:
+      74: 287887168487419916
+    second: BATATINHA.001|PORTAAction
+  - first:
+      74: 3900630669470962368
+    second: BATATINHA.001|PORTAAction.001
+  - first:
+      74: -4215179851800541708
+    second: BATATINHA.001|PORTAAction.002
+  - first:
+      74: 4610036257336135180
+    second: BATATINHA.001|PORTAAction.003
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

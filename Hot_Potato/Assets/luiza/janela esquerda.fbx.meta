@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 802c17395ec9bd849951373d4fca1c0e
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: -4647204889824952058
+    second: JANELA E ABRE
+  - first:
+      74: 6755878551035926285
+    second: JANELA E FECHA
+  - first:
+      74: 3556897835504217777
+    second: JANELA.003|BATATINHA BRACOSAction.000
+  - first:
+      74: 2434756507699761044
+    second: JANELA.003|BATATINHA BRACOSAction.001
+  - first:
+      74: 638918449163645850
+    second: JANELA.003|BATATINHA BRACOSAction.002
+  - first:
+      74: 8269579431456845280
+    second: JANELA.003|BATATINHA BRACOSAction.003
+  - first:
+      74: -2744026143716946151
+    second: JANELA.003|BATATINHA BRACOSAction.004
+  - first:
+      74: -6153865212489158216
+    second: JANELA.003|BATATINHA BRACOSAction.005
+  - first:
+      74: 1049839611804541882
+    second: JANELA.003|BATATINHA PERNASAction.000
+  - first:
+      74: -2344743168875790206
+    second: JANELA.003|BATATINHA PERNASAction.001
+  - first:
+      74: -3213156800484056991
+    second: JANELA.003|BATATINHA PERNASAction.002
+  - first:
+      74: -2337942345015419835
+    second: JANELA.003|BATATINHA PERNASAction.003
+  - first:
+      74: -899531444741269626
+    second: JANELA.003|BATATINHA PERNASAction.004
+  - first:
+      74: -4292360703384704306
+    second: JANELA.003|BATATINHA PERNASAction.005
+  - first:
+      74: -2040598956740212024
+    second: JANELA.003|BATATINHAAction.000
+  - first:
+      74: -4086624144748008163
+    second: JANELA.003|BATATINHAAction.002
+  - first:
+      74: -7230506981049670946
+    second: JANELA.003|FOGAO FOGOAction
+  - first:
+      74: -5458987133925676880
+    second: JANELA.003|FOGAO FOGOAction.001
+  - first:
+      74: -2695384086701403883
+    second: JANELA.003|JANELA.001Action.000
+  - first:
+      74: 5053846556191402054
+    second: JANELA.003|JANELA.001Action.001
+  - first:
+      74: 9008334752929512244
+    second: JANELA.003|JANELAAction
+  - first:
+      74: -8666613225380326699
+    second: JANELA.003|JANELAAction.001
+  - first:
+      74: 528216130921232680
+    second: JANELA.003|JANELAAction.002
+  - first:
+      74: -8414615534606882966
+    second: JANELA.003|JANELAAction.003
+  - first:
+      74: -4960136952550784428
+    second: JANELA.003|LAMPADA FOGO 1Action.000
+  - first:
+      74: -1935996551940764625
+    second: JANELA.003|LAMPADA FOGO 1Action.001
+  - first:
+      74: -6591534313330315269
+    second: JANELA.003|LAMPADA FOGO 2Action
+  - first:
+      74: -1414962456815012441
+    second: JANELA.003|LAMPADA FOGO 2Action.001
+  - first:
+      74: 476164433995782764
+    second: JANELA.003|LAREIRA FOGOAction.000
+  - first:
+      74: -1996049010928427281
+    second: JANELA.003|LAREIRA FOGOAction.002
+  - first:
+      74: 3974939248719528393
+    second: JANELA.003|PANELA CENOURASAction.000
+  - first:
+      74: -2245391408234294680
+    second: JANELA.003|PANELA CENOURASAction.005
+  - first:
+      74: 768883209063704246
+    second: JANELA.003|PORTAAction
+  - first:
+      74: 8034769699796375937
+    second: JANELA.003|PORTAAction.001
+  - first:
+      74: 988042161786818966
+    second: JANELA.003|PORTAAction.002
+  - first:
+      74: 3650566742264068152
+    second: JANELA.003|PORTAAction.003
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
