@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: GameManager
   m_EditorClassIdentifier: 
   intensityLuz:
-  - 0
+  - 1
   - 0
   intensityFogo:
   - 0.42066377
   - 0.42066377
+  iniciou: 0
+  jogoComecou: 1
