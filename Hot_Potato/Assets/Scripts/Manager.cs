@@ -8,6 +8,7 @@ public class Manager : MonoBehaviour
 {
     private GameManager gamMan;
     private CamManager camMan;
+    
     private void Awake()
     {
         gamMan = Resources.Load<GameManager>("GameManager");
@@ -17,6 +18,7 @@ public class Manager : MonoBehaviour
         camMan.camsPriority[1] = 15;
         camMan.camsPriority[2] = 10;
         camMan.camsPriority[3] = 10;
+        
 
         gamMan.fogoSala = false;
         gamMan.luzSala = false;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
@@ -62,12 +63,12 @@ public class EndGame : MonoBehaviour
 
 	private void GameOver()
 	{
-
+		SceneManager.LoadScene(1);
 	}
 
 	private void Win()
 	{
-
+		SceneManager.LoadScene(2);
 	}
 
 	private void Events()
