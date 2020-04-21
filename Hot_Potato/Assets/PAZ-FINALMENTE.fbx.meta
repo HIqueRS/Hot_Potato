@@ -3,7 +3,207 @@ guid: e8e5a5446b72a204ea3360c64900410c
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AMARELO
+    second: {fileID: 2100000, guid: 4f487241267b30a4a9a864328a87084d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AMARELO.001
+    second: {fileID: 2100000, guid: 4f487241267b30a4a9a864328a87084d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AMARELO.002
+    second: {fileID: 2100000, guid: 4f487241267b30a4a9a864328a87084d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AZUL MEIO
+    second: {fileID: 2100000, guid: 321ddc98351945c40aa4d6406d37269d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AZUL MEIO.001
+    second: {fileID: 2100000, guid: 321ddc98351945c40aa4d6406d37269d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AZUL MEIO.003
+    second: {fileID: 2100000, guid: 321ddc98351945c40aa4d6406d37269d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AZUL MEIO.004
+    second: {fileID: 2100000, guid: 321ddc98351945c40aa4d6406d37269d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BATATA.000
+    second: {fileID: 2100000, guid: 1b072c23086194849bbc1f9b814586e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BATATA.001
+    second: {fileID: 2100000, guid: 1b072c23086194849bbc1f9b814586e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BATATA.003
+    second: {fileID: 2100000, guid: 1b072c23086194849bbc1f9b814586e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BEGE CERTO
+    second: {fileID: 2100000, guid: 007c7e5ea323ba941924a91c6ad14abc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BEGE CERTO.001
+    second: {fileID: 2100000, guid: 007c7e5ea323ba941924a91c6ad14abc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LARANJA .004
+    second: {fileID: 2100000, guid: 40c50a2e6a31db6429bec340fc51ff58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LARANJA .006
+    second: {fileID: 2100000, guid: 40c50a2e6a31db6429bec340fc51ff58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LARANJA .007
+    second: {fileID: 2100000, guid: 40c50a2e6a31db6429bec340fc51ff58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LARANJA_
+    second: {fileID: 2100000, guid: 40c50a2e6a31db6429bec340fc51ff58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM CINZA
+    second: {fileID: 2100000, guid: 26d6333dcbd11534ca3bd71196448a08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM CINZA.001
+    second: {fileID: 2100000, guid: 26d6333dcbd11534ca3bd71196448a08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM CINZA.003
+    second: {fileID: 2100000, guid: 26d6333dcbd11534ca3bd71196448a08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM CINZA.004
+    second: {fileID: 2100000, guid: 26d6333dcbd11534ca3bd71196448a08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM ESCURO
+    second: {fileID: 2100000, guid: 3d9fa392684eade4bac61edef3c3a20a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM ESCURO.002
+    second: {fileID: 2100000, guid: 3d9fa392684eade4bac61edef3c3a20a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM ESCURO.003
+    second: {fileID: 2100000, guid: 3d9fa392684eade4bac61edef3c3a20a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM MADEIRA
+    second: {fileID: 2100000, guid: 16541f0a863573a4a93f1ca1f4a683b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM MEL
+    second: {fileID: 2100000, guid: a22de77b187fec241a2572d1ed4483ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM intermediario.000
+    second: {fileID: 2100000, guid: 243ce2332a60e644da6be750e03ee40f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARROM intermediario.001
+    second: {fileID: 2100000, guid: 243ce2332a60e644da6be750e03ee40f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MEL CLARO
+    second: {fileID: 2100000, guid: 3ced162b05b87ae42952f624eeb32bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MEL CLARO.002
+    second: {fileID: 2100000, guid: 3ced162b05b87ae42952f624eeb32bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NEVE
+    second: {fileID: 2100000, guid: b4e40144bcd62e04cb4fc81ee10abf0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse.003
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse.004
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse.006
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse.007
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERDE eh esse.008
+    second: {fileID: 2100000, guid: 49f5ae9c7039bd1409197f878cafc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERMELHO
+    second: {fileID: 2100000, guid: eb4ab33e2203f584d8e0532220e11f29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERMELHO.001
+    second: {fileID: 2100000, guid: eb4ab33e2203f584d8e0532220e11f29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VERMELHO.002
+    second: {fileID: 2100000, guid: eb4ab33e2203f584d8e0532220e11f29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fogo
+    second: {fileID: 2100000, guid: eabb2756cc1d9ae40b18edfbb26caa72, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
