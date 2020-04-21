@@ -54,8 +54,8 @@ public class SliderManager : MonoBehaviour
 				minimo = Random.Range(0.2f, 0.8f);
 				maximo = minimo + (tamanhoSlider / 1000);
 
-				frio.fillAmount = minimo;
-				quente.fillAmount = maximo;
+				frio.fillAmount = minimo*tamanhoSlider;
+				quente.fillAmount = minimo*tamanhoSlider;
 
 				posAreaCerta = minimo * tamanhoSlider;
 
