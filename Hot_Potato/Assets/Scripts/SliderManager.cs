@@ -12,21 +12,18 @@ public class SliderManager : MonoBehaviour
 	private float minimo;
 	private float maximo;
 	public Image areaCerta;
+	public Image frio;
+	public Image quente;
 	private float posAreaCerta;
 	[Tooltip("em float, 1 ja fica consideravelmente rapido")]
 	public float velSlider;
 	private GameObject gManager;
 	public GameObject painel;
 	public GameObject painelErro;
-	public Image painelErrou;
 
-	private bool aumentaAlfa = false;
 
 	private int lugar, tipo;
-	private bool errou = false;
-	private float piscaPisca;
 	private bool chamou = false;
-	private bool desligaTudo;
 
 	private bool chamou1 = true;
 
@@ -57,9 +54,13 @@ public class SliderManager : MonoBehaviour
 				minimo = Random.Range(0.2f, 0.8f);
 				maximo = minimo + (tamanhoSlider / 1000);
 
+				frio.fillAmount = minimo;
+				quente.fillAmount = maximo;
+
 				posAreaCerta = minimo * tamanhoSlider;
 
-				//areaCerta.rectTransform.Translate(new Vector3(posAreaCerta, 0, 0));
+
+				
 
 				areaCerta.rectTransform.anchoredPosition = new Vector3(posAreaCerta, 0, 0);
 
@@ -98,17 +99,12 @@ public class SliderManager : MonoBehaviour
 				}
 				else
 				{
-					errou = true;
 
 					painel.SetActive(false);
 
 					painelErro.SetActive(true);
 
-					chamou = false;
-
-					piscaPisca = 0.6f;
-
-					painelErrou.color = new Color(painelErrou.color.r, painelErrou.color.g, painelErrou.color.b, piscaPisca);					
+					chamou = false;			
 
 					ligarCoisinhas.value = 0;
 				}
@@ -119,10 +115,6 @@ public class SliderManager : MonoBehaviour
 				minimo = 0;
 				maximo = 0;
 			}
-		}
-		if (errou)
-		{
-			PiscaPanel();
 		}
 
 	}
@@ -167,32 +159,6 @@ public class SliderManager : MonoBehaviour
 		}
 		
 	}
-
-	void PiscaPanel()
-	{
-		if (piscaPisca > 0.3f && !aumentaAlfa)
-		{
-			piscaPisca -= 0.6f * Time.deltaTime;
-
-			//Debug.Log(piscaPisca);
-		}
-		else if (piscaPisca <= 0.6f && aumentaAlfa)
-		{
-			piscaPisca += 0.6f * Time.deltaTime;
-
-		}
-
-		if (piscaPisca >= 0.6)
-		{
-			aumentaAlfa = false;
-		}
-		else if (piscaPisca <= 0.3f)
-		{
-			aumentaAlfa = true;
-		}
-		
-		painelErrou.color = new Color(painelErrou.color.r, painelErrou.color.g, painelErrou.color.b, piscaPisca);
-	}
 	
 	public void AcertouBotao()
 	{
@@ -201,8 +167,6 @@ public class SliderManager : MonoBehaviour
 		painelErro.SetActive(false);
 
 		ligarCoisinhas.value = 0;
-
-		errou = false;
 
 		if (tipo == 0)
 		{
