@@ -22,4 +22,14 @@ public class GOTOGAME : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
