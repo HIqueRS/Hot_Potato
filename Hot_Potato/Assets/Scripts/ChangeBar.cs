@@ -186,6 +186,7 @@ public class ChangeBar : MonoBehaviour
 
 				bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, DiminuiAlfaBG(sala));
 				imageFogo[sala].color = new Color(imageFogo[sala].color.r, imageFogo[sala].color.g, imageFogo[sala].color.b, DiminuiAlfaIM(sala));
+				frame[sala].color = new Color(frame[sala].color.r, frame[sala].color.g, frame[sala].color.b, DiminuiAlfaBG(sala));
 
 				taLigadaLuz[sala] = false;
 			}
@@ -209,6 +210,7 @@ public class ChangeBar : MonoBehaviour
 		{
 			bgFogo[sala].color = new Color(bgFogo[sala].color.r, bgFogo[sala].color.g, bgFogo[sala].color.b, 1);
 			imageFogo[sala].color = new Color(imageFogo[sala].color.r, imageFogo[sala].color.g, imageFogo[sala].color.b, 1);
+			frame[sala].color = new Color(frame[sala].color.r, frame[sala].color.g, frame[sala].color.b, 1);
 
 			diminuiAlfabg[sala] = diminuiAlfaim[sala] = 1;
 
@@ -220,6 +222,7 @@ public class ChangeBar : MonoBehaviour
 			bgFogo[cozinha].color = new Color(bgFogo[cozinha].color.r, bgFogo[cozinha].color.g, bgFogo[cozinha].color.b, DiminuiAlfaBG(cozinha));
 			frame[cozinha].color = new Color(frame[cozinha].color.r, frame[cozinha].color.g, frame[cozinha].color.b, DiminuiAlfaBG(cozinha));
 			imageFogo[cozinha].color = new Color(imageFogo[cozinha].color.r, imageFogo[cozinha].color.g, imageFogo[cozinha].color.b, DiminuiAlfaIM(cozinha));
+			
 
 			taLigadaLuz[cozinha] = false;
 		}

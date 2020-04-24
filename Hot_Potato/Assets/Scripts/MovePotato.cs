@@ -79,11 +79,15 @@ public class MovePotato : MonoBehaviour
                     {
 						if (!holdUp)
 						{
-							man.luzCozinha = false;
-							man.luzSala = false;
-							man.fogoCozinha = true;
-							man.fogoSala = false;
-							holdUp = true;
+							if(man.intensityLuz[1] > 0)
+							{
+								man.luzCozinha = false;
+								man.luzSala = false;
+								man.fogoCozinha = true;
+								man.fogoSala = false;
+								holdUp = true;
+							}
+							
 						}
 						else
 						{
@@ -95,11 +99,15 @@ public class MovePotato : MonoBehaviour
                     {
 						if (!holdUp)
 						{
-							man.luzCozinha = false;
-							man.luzSala = false;
-							man.fogoCozinha = false;
-							man.fogoSala = true;
-							holdUp = true;
+							if (man.intensityLuz[0] > 0)
+							{
+								man.luzCozinha = false;
+								man.luzSala = false;
+								man.fogoCozinha = false;
+								man.fogoSala = true;
+								holdUp = true;
+							}
+							
 						}
 						else
 						{

@@ -20,7 +20,7 @@ public class MusicMenu : MonoBehaviour
         if(gamMan.jogoComecou)
         {
             musicMenu.volume -= 0.19875f*Time.deltaTime;
-            if(musicGame.volume <= 0.5)
+            if(musicGame.volume <= 1)
             {
                 musicGame.volume += 0.19875f*Time.deltaTime;
             }

@@ -86,13 +86,13 @@ public class EndGame : MonoBehaviour
 				{
 					leftWindow.SetTrigger("Open");
 					rightWindow.SetTrigger("Open");
-					changeBar.Evento(0, 0.2f);
+					changeBar.Evento(0, 0.25f);
 					
 				}
 				else
 				{
 					door.SetTrigger("Open");
-					changeBar.Evento(1, 0.2f);
+					changeBar.Evento(1, 0.25f);
 				}
 				
 				
