@@ -3,7 +3,9 @@
 	Properties
 	{
 		_Color("Color", Color) = (0.5, 0.65, 1, 1)
-		_MainTex("Main Texture", 2D) = "white" {}	
+		_MainTex("Main Texture", 2D) = "white" {}
+		[HDR]
+		_AmbientColor("Ambient color", color) = (0.3,0.3,0.3,1)
 	}
 	
 		SubShader
@@ -23,6 +25,7 @@
 			#pragma fragment frag
 			
 			#include "UnityCG.cginc"
+			#include "Lighting.cginc"
 
 			struct appdata
 			{
@@ -51,7 +54,7 @@
 			}
 			
 			float4 _Color;
-			
+			float4 _AmbientColor;
 
 			float4 frag (v2f i) : SV_Target
 			{
@@ -59,9 +62,12 @@
 				float Ndotl = dot(_WorldSpaceLightPos0, normal);
 				float4 sample = tex2D(_MainTex, i.uv);
 
-				float lightIntensity = Ndotl > 0 ? 1 : 0;
+				float lightIntensity = smoothstep(0,0.001,Ndotl);
+				float4 light = lightIntensity * _LightColor0;
 
-				return _Color * sample * lightIntensity;
+				
+
+				return _Color * sample *( light + _AmbientColor);
 			}
 			ENDCG
 		}
